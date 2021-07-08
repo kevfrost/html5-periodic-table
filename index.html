@@ -2,6 +2,14 @@
 <html>
 	<head>
         <title>Periodic Table of HTML elements</title>
+		
+		<script>
+		     function HIDE() 
+		document.getElementById("BEN").className = "element empty-element";
+    
+    </script>
+		
+		
 		<style>html {
   background: #787878;
   /* Old browsers */
@@ -43,7 +51,9 @@ h1 {
     height: 6vmin;
     justify-content: space-around; }
   .f-block .row {
-    justify-content: flex-end; }
+    justify-content: flex-start; 
+	 padding-left: 170px;
+   }
   .element {
     display: flex;
     font-weight: bold;
@@ -105,260 +115,247 @@ h1 {
     background: url("moz.png") no-repeat left center;
     word-break: break-word; }
 
-.element.group-base {
-  background-color: #d48489; }
-  .element.group-base:hover {
+.remove {
+	text-decoration: line-through;
+	color:#999;}
+
+.element.Penicillin {
+  background-color: #DE597C; }
+  .element.Penicillin:hover {
     background-color: #e1aaad; }
 
-.description.group-base {
-  background-color: rgba(225, 170, 173, 0.5); }
-  .description.group-base:hover {
+.description.Penicillin {
+  background-color: #DE597C; }
+  .description.Penicillin:hover {
     background-color: rgba(212, 132, 137, 0.8); }
 
-.key li.group-base:before {
-  background-color: #d48489; }
+.key li.Penicillin:before {
+  background-color: #DE597C; }
 
-.hover-group-base .element {
+.hover-Penicillin .element {
   opacity: .5; }
 
-.hover-group-base .element.group-base {
+.hover-Penicillin .element.Penicillin {
   opacity: 1; }
 
-.element.group-metadata {
-  background-color: #d49384; }
-  .element.group-metadata:hover {
+.element.Quinolone {
+  background-color: #37DE4D; }
+  .element.Quinolone:hover {
     background-color: #e1b4aa; }
 
-.description.group-metadata {
+.description.Quinolone {
   background-color: rgba(225, 180, 170, 0.5); }
-  .description.group-metadata:hover {
+  .description.Quinolone:hover {
     background-color: rgba(212, 147, 132, 0.8); }
 
-.key li.group-metadata:before {
-  background-color: #d49384; }
+.key li.Quinolone:before {
+  background-color: #37DE4D; }
 
-.hover-group-metadata .element {
+.hover-Quinolone .element {
   opacity: .5; }
 
-.hover-group-metadata .element.group-metadata {
+.hover-Quinolone .element.Quinolone {
   opacity: 1; }
 
-.element.group-sectioning {
-  background-color: #d4a784; }
-  .element.group-sectioning:hover {
+.element.FolicAcid {
+  background-color: #E3BF81; }
+  .element.FolicAcid:hover {
     background-color: #e1c2aa; }
 
-.description.group-sectioning {
-  background-color: rgba(225, 194, 170, 0.5); }
-  .description.group-sectioning:hover {
+.description.FolicAcid {
+  background-color: #E3BF81; }
+  .description.FolicAcid:hover {
     background-color: rgba(212, 167, 132, 0.8); }
 
-.key li.group-sectioning:before {
-  background-color: #d4a784; }
+.key li.FolicAcid:before {
+  background-color: #E3BF81; }
 
-.hover-group-sectioning .element {
+.hover-FolicAcid .element {
   opacity: .5; }
 
-.hover-group-sectioning .element.group-sectioning {
+.hover-FolicAcid .element.FolicAcid {
   opacity: 1; }
 
-.element.group-text-content {
-  background-color: #d4bb84; }
-  .element.group-text-content:hover {
+.element.Carbapenems {
+  background-color: #8D57DF; }
+  .element.Carbapenems:hover {
     background-color: #e1d0aa; }
 
-.description.group-text-content {
-  background-color: rgba(225, 208, 170, 0.5); }
-  .description.group-text-content:hover {
-    background-color: rgba(212, 187, 132, 0.8); }
+.description.Carbapenems {
+  background-color: #8D57DF; }
+  .description.Carbapenems:hover {
+    background-color: #8D57DF; }
 
-.key li.group-text-content:before {
-  background-color: #d4bb84; }
+.key li.Carbapenems:before {
+  background-color: #8D57DF; }
 
-.hover-group-text-content .element {
+.hover-Carbapenems .element {
   opacity: .5; }
 
-.hover-group-text-content .element.group-text-content {
+.hover-Carbapenems .element.Carbapenems {
   opacity: 1; }
 
-.element.group-text-semantics {
-  background-color: #d4cf84; }
-  .element.group-text-semantics:hover {
+.element.Others {
+  background-color: #E0DB46; }
+  .element.Others:hover {
     background-color: #e1deaa; }
 
-.description.group-text-semantics {
-  background-color: rgba(225, 222, 170, 0.5); }
-  .description.group-text-semantics:hover {
+.description.Others {
+  background-color: #E0DB46; }
+  .description.Others:hover {
     background-color: rgba(212, 207, 132, 0.8); }
 
-.key li.group-text-semantics:before {
-  background-color: #d4cf84; }
+.key li.Others:before {
+  background-color: #E0DB46; }
 
-.hover-group-text-semantics .element {
+.hover-Others .element {
   opacity: .5; }
 
-.hover-group-text-semantics .element.group-text-semantics {
+.hover-Others .element.Others {
   opacity: 1; }
 
-.element.group-media {
-  background-color: #c5d484; }
-  .element.group-media:hover {
+.element.Gram-negative beta-lactam {
+  background-color: #37DE4D; }
+  .element.Gram-negative beta-lactam:hover {
     background-color: #d7e1aa; }
 
-.description.group-media {
-  background-color: rgba(215, 225, 170, 0.5); }
-  .description.group-media:hover {
-    background-color: rgba(197, 212, 132, 0.8); }
+.description.Gram-negative beta-lactam {
+  background-color: #37DE4D; }
+  .description.Gram-negative beta-lactam:hover {
+    background-color: #37DE4D; }
 
-.key li.group-media:before {
-  background-color: #c5d484; }
+.key li.Gram-negative beta-lactam:before {
+  background-color: #37DE4D; }
 
-.hover-group-media .element {
+.hover-Gram-negative beta-lactam .element {
   opacity: .5; }
 
-.hover-group-media .element.group-media {
+.hover-Gram-negative beta-lactam .element.Gram-negative beta-lactam {
   opacity: 1; }
 
-.element.group-embedded {
-  background-color: #b1d484; }
-  .element.group-embedded:hover {
-    background-color: #c9e1aa; }
-
-.description.group-embedded {
-  background-color: rgba(201, 225, 170, 0.5); }
-  .description.group-embedded:hover {
-    background-color: rgba(177, 212, 132, 0.8); }
-
-.key li.group-embedded:before {
-  background-color: #b1d484; }
-
-.hover-group-embedded .element {
-  opacity: .5; }
-
-.hover-group-embedded .element.group-embedded {
-  opacity: 1; }
-
-.element.group-script {
-  background-color: #9dd484; }
-  .element.group-script:hover {
+.element.Macrolides {
+  background-color: #78ADE3; }
+  .element.Macrolides:hover {
     background-color: #bbe1aa; }
 
-.description.group-script {
-  background-color: rgba(187, 225, 170, 0.5); }
-  .description.group-script:hover {
+.description.Macrolides {
+  background-color: #78ADE3; }
+  .description.Macrolides:hover {
     background-color: rgba(157, 212, 132, 0.8); }
 
-.key li.group-script:before {
-  background-color: #9dd484; }
+.key li.Macrolides:before {
+  background-color: #78ADE3; }
 
-.hover-group-script .element {
+.hover-Macrolides .element {
   opacity: .5; }
 
-.hover-group-script .element.group-script {
+.hover-Macrolides .element.Macrolides {
   opacity: 1; }
 
-.element.group-edits {
-  background-color: #89d484; }
-  .element.group-edits:hover {
+.element.Tetracyclines {
+  background-color: #6093E0; }
+  .element.Tetracyclines:hover {
     background-color: #ade1aa; }
 
-.description.group-edits {
-  background-color: rgba(173, 225, 170, 0.5); }
-  .description.group-edits:hover {
+.description.Tetracyclines {
+  background-color: #6093E0; }
+  .description.Tetracyclines:hover {
     background-color: rgba(137, 212, 132, 0.8); }
 
-.key li.group-edits:before {
-  background-color: #89d484; }
+.key li.Tetracyclines:before {
+  background-color: #6093E0; }
 
-.hover-group-edits .element {
+.hover-Tetracyclines .element {
   opacity: .5; }
 
-.hover-group-edits .element.group-edits {
+.hover-Tetracyclines .element.Tetracyclines {
   opacity: 1; }
 
-.element.group-table {
-  background-color: #84d493; }
-  .element.group-table:hover {
+.element.Gram-negativeBL {
+  background-color: #47aa00; }
+  .element.Gram-negativeBL:hover {
     background-color: #aae1b4; }
 
-.description.group-table {
-  background-color: rgba(170, 225, 180, 0.5); }
-  .description.group-table:hover {
+.description.Gram-negativeBL {
+  background-color: #47aa00; }
+  .description.Gram-negativeBL:hover {
     background-color: rgba(132, 212, 147, 0.8); }
 
-.key li.group-table:before {
-  background-color: #84d493; }
+.key li.Gram-negativeBL:before {
+  background-color: #47aa00; }
 
-.hover-group-table .element {
+.hover-Gram-negativeBL .element {
   opacity: .5; }
 
-.hover-group-table .element.group-table {
+.hover-Gram-negativeBL .element.Gram-negativeBL {
   opacity: 1; }
 
-.element.group-forms {
-  background-color: #84d4a7; }
-  .element.group-forms:hover {
+.element.Aminoglycosides {
+  background-color: #B1E07F; }
+  .element.Aminoglycosides:hover {
     background-color: #aae1c2; }
 
-.description.group-forms {
-  background-color: rgba(170, 225, 194, 0.5); }
-  .description.group-forms:hover {
+.description.Aminoglycosides {
+  background-color: #B1E07F; }
+  .description.Aminoglycosides:hover {
     background-color: rgba(132, 212, 167, 0.8); }
 
-.key li.group-forms:before {
-  background-color: #84d4a7; }
+.key li.Aminoglycosides:before {
+  background-color: #B1E07F; }
 
-.hover-group-forms .element {
+.hover-Aminoglycosides .element {
   opacity: .5; }
 
-.hover-group-forms .element.group-forms {
+.hover-Aminoglycosides .element.Aminoglycosides {
   opacity: 1; }
 
-.element.group-interactive {
-  background-color: #84d4bb; }
-  .element.group-interactive:hover {
+.element.Glycopeptides {
+  background-color: #E09669; }
+  .element.Glycopeptides:hover {
     background-color: #aae1d0; }
 
-.description.group-interactive {
-  background-color: rgba(170, 225, 208, 0.5); }
-  .description.group-interactive:hover {
+.description.Glycopeptides {
+  background-color: #E09669; }
+  .description.Glycopeptides:hover {
     background-color: rgba(132, 212, 187, 0.8); }
 
-.key li.group-interactive:before {
-  background-color: #84d4bb; }
+.key li.Glycopeptides:before {
+  background-color: #E09669; }
 
-.hover-group-interactive .element {
+.hover-Glycopeptides .element {
   opacity: .5; }
 
-.hover-group-interactive .element.group-interactive {
+.hover-Glycopeptides .element.Glycopeptides {
   opacity: 1; }
 
-.element.group-web-components {
+.element.Cephalosporin {
   background-color: #84d4cf; }
-  .element.group-web-components:hover {
+  .element.Cephalosporin:hover {
     background-color: #aae1de; }
 
-.description.group-web-components {
+.description.Cephalosporin {
   background-color: rgba(170, 225, 222, 0.5); }
-  .description.group-web-components:hover {
+  .description.Cephalosporin:hover {
     background-color: rgba(132, 212, 207, 0.8); }
 
-.key li.group-web-components:before {
+.key li.Cephalosporin:before {
   background-color: #84d4cf; }
 
-.hover-group-web-components .element {
+.hover-Cephalosporin .element {
   opacity: .5; }
 
-.hover-group-web-components .element.group-web-components {
+.hover-Cephalosporin .element.Cephalosporin {
   opacity: 1; }
 </style>
 	</head>
 	<body>
 		<main>
-			<h1>Periodic table of HTML elements</h1>
+			<h1>Periodic table of UK Antibiotics</h1>
 			<div class="elements">
 	<div class="row">
-		<a href="#html" class="element group-base"><span>html</span></a>
+		
+		<div class="element empty-element"></div>
+		<a title="Benzylpenicillin/Penicillin V" href="#BEN" id="elementBEN" class="element Penicillin"><span>BEN</span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
@@ -370,134 +367,104 @@ h1 {
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
+		<a title="Gentamicin" href="#Gentamicin" class="element Aminoglycosides"><span>GEN</span></a>
 		<div class="element empty-element"></div>
-		<div class="element empty-element"></div>
-		<a href="#output" class="element group-forms"><span>output</span></a>
+		
 	</div>
 	<div class="row">
-		<a href="#base" class="element group-metadata"><span>base</span></a>
-		<a href="#header" class="element group-sectioning"><span>header</span></a>
+		
+		<div class="element empty-element"></div>
+		<a href="#Amoxicillin" 		title="Amoxicillin/Ampicillin"		class="element Penicillin"><span>AMO</span></a>
+		<a href="#Flucloxacillin" 	title="Flucloxacillin"	class="element Penicillin"><span>FLU</span></a>
+		<a href="#Pivmecillinam" 	title="Pivmecillinam"	class="element Gram-negativeBL"><span>PIV</span></a>
+		<a href="" 					title="1st Generation Cephalosporin"			class="element Cephalosporin"><span>C 1</span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
+		<a href="#Nitrofurantoin" 	title="Nitrofurantoin"	class="element Others"><span>NIT</span></a>
+		<a href="#Trimethoprim" 	title="Trimethoprim"	class="element FolicAcid"><span>TRI</span></a>
+		<a href="#Doxycycline" 		title="Doxycycline"		class="element Tetracyclines"><span>DOX</span></a>
+		<a href="#Clarithromycin" 	title="Clarithromycin"	class="element Macrolides"><span>CLA</span></a>
+		<a href="#Fusidic" 			title="Fusidic acid/Sodium Fusidate"	class="element Others"><span>FUS</span></a>
+		<a href="#Tobramycin" 		title="Tobramycin" 		class="element Aminoglycosides"><span>TOB</span></a>
 		<div class="element empty-element"></div>
-		<div class="element empty-element"></div>
-		<div class="element empty-element"></div>
-		<a href="#strong" class="element group-text-semantics"><span>strong</span></a>
-		<a href="#area" class="element group-media"><span>area</span></a>
-		<a href="#param" class="element group-embedded"><span>param</span></a>
-		<a href="#caption" class="element group-table"><span>caption</span></a>
-		<a href="#th" class="element group-table"><span>th</span></a>
-		<a href="#input" class="element group-forms"><span>input</span></a>
-		<a href="#progress" class="element group-forms"><span>progress</span></a>
 	</div>
 	<div class="row">
-		<a href="#head" class="element group-metadata"><span>head</span></a>
-		<a href="#h1-h6" class="element group-sectioning"><span>h1-h6</span></a>
+	
+		<div class="element empty-element"></div>
+		<a href="#CoAmox" 			title="Co-amoxiclav"	class="element Penicillin"><span>AMC</span></a>
+		<div class="element empty-element"></div>
+		<a href="Temocillin" 		title="Temocillin"		class="element Gram-negativeBL"><span>TEM</span></a>
+		<a href="" 					title="2nd generation cephalosporin"	class="element Cephalosporin"><span>C 2</span></a>
+		<a href="#Vancomycin" 		title="Vancomycin"		class="element Glycopeptides"><span>VAN</span></a>
+		<a href="#Fosfomycin" 		title="Fosfomycin"		class="element Others"><span>FOS</span></a>
+		<a href="#Ciprofloxacin" 	title="Ciprofloxacin"	class="element Quinolone"><span>CIP</span></a>
+		<a href="#Metronidazole" 	title="Metronidazole"	class="element Others"><span>MET</span></a>
+		<a href="#Co-trimoxazole" 	title="Co-trimoxazole"	class="element FolicAcid"><span>TRS</span></a>
+		<a href="#Tetracycline" 	title="Tetracycline" 	class="element Tetracyclines"><span>TET</span></a>
+		<a href="#Erythromycin" 	title="Erythromycin"	class="element Macrolides"><span>ERY</span></a>
+		<a href="#Rifampicin" 		title="Rifampicin"		class="element Others"><span>RIF</span></a>
+		<a href="#Amikacin" 		title="Amikacin"		class="element Aminoglycosides" title="Amikacin"><span>AMI</span></a>
+		<div class="element empty-element"></div>
+		</div>
+	<div class="row">
+		<div class="element empty-element"></div>
+		<a href="#PipTaz" 			title="Piperacillin with Tazobactam"	class="element Penicillin"><span>PIT</span></a>
+		<div class="element empty-element"></div>
+		<a href="#Aztreonam" 		title="Aztreonam"	class="element Gram-negativeBL"><span>AZT</span></a>
+		<a href="" 					title="3rd generation cephalosporin"	class="element Cephalosporin"><span>C 3</span></a>
+		<a href="#Teicoplanin" 		title="Teicoplanin"	class="element Glycopeptides"><span>TEI</span></a>
+		<a href="#Daptomycin" 		title="Daptomycin"	class="element Others"><span>DAP</span></a>
+		<a href="#Levofloxacin" 	title="Levofloxacin" class="element Quinolone"><span>LEV</span></a>
+				<div class="element empty-element"></div>
+				<div class="element empty-element"></div>
+		<a href="#Oxytetracycline" 	title="Oxytetracycline"	class="element Tetracyclines"><span>OXY</span></a>
+		<a href="#Clindamycin" 		title="Clindamycin"	class="element Macrolides"><span>CLI</span></a>
+		<a href="#Linezolid" 		title="Linezolid and Tedizolid"	class="element Others"><span>LIN</span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
+
+		</div>
+	<div class="row">
+		<div class="element empty-element"></div>
+		<a href="#Meropenem" 	title="Meropenem"	class="element Carbapenems"><span>MER</span></a>
+		<a href="#Ertapenem" 	title="Ertapenem"	class="element Carbapenems"><span>ERT</span></a>
+		<a href="#Imipenem" 	title="Imipenem with Cilastin" class="element Carbapenems"><span>IMI</span></a>
+		<a href="" 				title="5th generation Cephalosporin" 	class="element Cephalosporin"><span>C 5</span></a>
+		<a href="#Dalbavancin" 	title="Dalbavancin"	class="element Glycopeptides"><span>DAL</span></a>
+		<a href="#Colistin" 	title="Colistin"	class="element Others"><span>COL</span></a>
+		<a href="#Ofloxacin" 	title="Ofloxacin"	class="element Quinolone"><span>OFL</span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
+		<a href="#Minocycline" 	title="Minocycline"		class="element Tetracyclines"><span>MIN</span></a>
+		<a href="#Azithromycin" title="Azithromycin"	class="element Macrolides"><span>AZI</span></a>
+		<a href="#Chloramphenicol" title="Chloramphenicol"	class="element Others"><span>CHL</span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
-		<a href="#sub" class="element group-text-semantics"><span>sub</span></a>
-		<a href="#audio" class="element group-media"><span>audio</span></a>
-		<a href="#source" class="element group-embedded"><span>source</span></a>
-		<a href="#col" class="element group-table"><span>col</span></a>
-		<a href="#thead" class="element group-table"><span>thead</span></a>
-		<a href="#keygen" class="element group-forms"><span>keygen</span></a>
-		<a href="#select" class="element group-forms"><span>select</span></a>
 	</div>
 	<div class="row">
-		<a href="#style" class="element group-metadata"><span>style</span></a>
-		<a href="#hgroup" class="element group-sectioning"><span>hgroup</span></a>
-		<a href="#dt" class="element group-text-content"><span>dt</span></a>
-		<a href="#ol" class="element group-text-content"><span>ol</span></a>
-		<a href="#bdi" class="element group-text-semantics"><span>bdi</span></a>
-		<a href="#data" class="element group-text-semantics"><span>data</span></a>
-		<a href="#mark" class="element group-text-semantics"><span>mark</span></a>
-		<a href="#ruby" class="element group-text-semantics"><span>ruby</span></a>
-		<a href="#sup" class="element group-text-semantics"><span>sup</span></a>
-		<a href="#map" class="element group-media"><span>map</span></a>
-		<a href="#canvas" class="element group-script"><span>canvas</span></a>
-		<a href="#colgroup" class="element group-table"><span>colgroup</span></a>
-		<a href="#tr" class="element group-table"><span>tr</span></a>
-		<a href="#label" class="element group-forms"><span>label</span></a>
-		<a href="#details" class="element group-interactive"><span>details</span></a>
+		<div class="element empty-element"></div>
+		<a href="#MER-AVI" 	title="Meropenem and Avibactam"	class="element Carbapenems"><span>MER+AVI</span></a>
+				<div class="element empty-element"></div>
+				<div class="element empty-element"></div>
+		<a href="" title="Cephalosporin with Enzyme Inhibitor, see bottom right" class="element Cephalosporin"><span>C + EI</span></a>
+		<a href="#Telavancin" 	title="Telavancin"	class="element Glycopeptides"><span>TEL</span></a>
+				<div class="element empty-element"></div>
+
+		<a href="#Moxifloxacin" title="Moxifloxacin"	class="element Quinolone"><span>MOX</span></a>
+						<div class="element empty-element"></div>
+				<div class="element empty-element"></div>
+
+		<a href="#Tigecycline" title="Tigecycline"	class="element Tetracyclines"><span>TIG</span></a>
+						<div class="element empty-element"></div>
+				<div class="element empty-element"></div>
+		<a href="#TB" 		title="TB and leprosy drugs"	class="element Others"><span>TB/L</span></a>
+		
+				<div class="element empty-element"></div>
 	</div>
 	<div class="row">
-		<a href="#title" class="element group-metadata"><span>title</span></a>
-		<a href="#nav" class="element group-sectioning"><span>nav</span></a>
-		</a><a href="#figcaption" class="element group-text-content"><span>figcaption</span></a>
-		<a href="#p" class="element group-text-content"><span>p</span></a>
-		<a href="#bdo" class="element group-text-semantics"><span>bdo</span></a>
-		<a href="#dfn" class="element group-text-semantics"><span>dfn</span></a>
-		<a href="#q" class="element group-text-semantics"><span>q</span></a>
-		<a href="#s" class="element group-text-semantics"><span>s</span></a>
-		<a href="#time" class="element group-text-semantics"><span>time</span></a>
-		<a href="#track" class="element group-media"><span>track</span></a>
-		<a href="#noscript" class="element group-script"><span>noscript</span></a>
-		<a href="#table" class="element group-table"><span>table</span></a>
-		<a href="#button" class="element group-forms"><span>button</span></a>
-		<a href="#legend" class="element group-forms"><span>legend</span></a>
-		<a href="#dialog" class="element group-interactive"><span>dialog</span></a>
-	</div>
-	<div class="row">
-		<a href="#body" class="element group-sectioning"><span>body</span></a>
-		<a href="#section" class="element group-sectioning"><span>section</span></a>
-		<a href="#figure" class="element group-text-content"><span>figure</span>
-		<a href="#pre" class="element group-text-content"><span>pre</span></a>
-		<a href="#br" class="element group-text-semantics"><span>br</span></a>
-		<a href="#em" class="element group-text-semantics"><span>em</span></a>
-		<a href="#rp" class="element group-text-semantics"><span>rp</span></a>
-		<a href="#samp" class="element group-text-semantics"><span>samp</span></a>
-		<a href="#u" class="element group-text-semantics"><span>u</span></a>
-		<a href="#video" class="element group-media"><span>video</span></a>
-		<a href="#script" class="element group-script"><span>script</span></a>
-		<a href="#tbody" class="element group-table"><span>tbody</span></a>
-		<a href="#datalist" class="element group-forms"><span>datalist</span></a>
-		<a href="#meter" class="element group-forms"><span>meter</span></a>
-		<a href="#menu" class="element group-interactive"><span>menu</span></a>
-	</div>
-	<div class="row">
-		<a href="#address" class="element group-sectioning"><span>address</span></a>
-		<a href="#dd" class="element group-text-content"><span>dd</span></a>
-		<a href="#hr" class="element group-text-content"><span>hr</span></a>
-		<a href="#ul" class="element group-text-content"><span>ul</span></a>
-		<a href="#cite" class="element group-text-semantics"><span>cite</span></a>
-		<a href="#i" class="element group-text-semantics"><span>i</span></a>
-		<a href="#rt" class="element group-text-semantics"><span>rt</span></a>
-		<a href="#small" class="element group-text-semantics"><span>small</span></a>
-		<a href="#var" class="element group-text-semantics"><span>var</span></a>
-		<a href="#embed" class="element group-embedded"><span>embed</span></a>
-		<a href="#del" class="element group-edits"><span>del</span></a>
-		<a href="#td" class="element group-table"><span>td</span></a>
-		<a href="#fieldset" class="element group-forms"><span>fieldset</span></a>
-		<a href="#optgroup" class="element group-forms"><span>optgroup</span></a>
-		<a href="#menuitem" class="element group-interactive"><span>menuitem</span></a>
-	</div>
-	<div class="row">
-		<a href="#article" class="element group-sectioning"><span>article</span></a>
-		<a href="#div" class="element group-text-content"><span>div</span></a>
-		<a href="#li" class="element group-text-content"><span>li</span></a>
-		<a href="#abbr" class="element group-text-semantics"><span>abbr</span></a>
-		<a href="#code" class="element group-text-semantics"><span>code</span></a>
-		<a href="#kbd" class="element group-text-semantics"><span>kbd</span></a>
-		<a href="#rtc" class="element group-text-semantics"><span>rtc</span></a>
-		<a href="#span" class="element group-text-semantics"><span>span</span></a>
-		<a href="#wbr" class="element group-text-semantics"><span>wbr</span></a>
-		<a href="#object" class="element group-embedded"><span>object</span></a>
-		<a href="#ins" class="element group-edits"><span>ins</span></a>
-		<a href="#tfoot" class="element group-table"><span>tfoot</span></a>
-		<a href="#form" class="element group-forms"><span>form</span></a>
-		<a href="#option" class="element group-forms"><span>option</span></a>
-		<a href="#summary" class="element group-interactive"><span>summary</span></a>
-	</div>
-	<div class="row">
-		<a href="#footer" class="element group-sectioning"><span>footer</span></a>
-		<a href="#dl" class="element group-text-content"><span>dl</span></a>
-		<a href="#main" class="element group-text-content"><span>main</span></a>
-		<a href="#b" class="element group-text-semantics"><span>b</span></a>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
@@ -513,547 +480,324 @@ h1 {
 </div>
 <div class="f-block elements">
 	<div class="row">
-	  <a href="#content" class="element group-web-components"><span>content</span></a>
-	  <a href="#element" class="element group-web-components"><span>element</span></a>
-	  <a href="#shadow" class="element group-web-components"><span>shadow</span></a>
-	  <a href="#template" class="element group-web-components"><span>template</span></a>
+	  <a href="#CephGen" class="element Cephalosporin"><span>1st Gen  Cephalosporin</span></a>
+	  <a href="#CEF" 	title="Cefradine"	class="element Cephalosporin"><span>CEF</span></a>
+	  <a href="#shadow" 	title="Cefalexin"	class="element Cephalosporin"><span>CLE</span></a>
+	  <a href="#template" 	tilte="Cefazolin"	class="element Cephalosporin"><span>CZO</span></a>
+  	  <a href="#template" 	title="Cefadroxil"	class="element Cephalosporin"><span>CDR</span></a>
+		<div class="element empty-element"></div>
+		
 	</div>
-</div>
+	<div class="row">
+	  <a href="#CephGen" class="element Cephalosporin"><span>2nd Gen  Cephalosporin</span></a>
+	  <a href="#element" 	title="Cefuroxime"	class="element Cephalosporin"><span>CUR</span></a>
+	  <a href="#shadow" 	title="Cefaclor"	class="element Cephalosporin"><span>CCL</span></a>
+	  <a href="#template" 	title="Cefoxitin" 	class="element Cephalosporin"><span>CXI</span></a>
+  		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
 
+		</div>
+		<div class="row">
+	  <a href="#CephGen" class="element Cephalosporin"><span>3rd Gen  Cephalosporin</span></a>
+	  <a href="#Cefotaxime" 	title="Cefotaxime"		class="element Cephalosporin"><span>CTA</span></a>
+	  <a href="#Ceftazidime" 	title="Ceftazidime"		class="element Cephalosporin"><span>CTZ</span></a>
+	  <a href="#Cefixime" 		title="Cefixime"		class="element Cephalosporin"><span>CIX</span></a>
+  	  <a href="#Ceftriaxone" 	title="Ceftriaxone"		class="element Cephalosporin"><span>CTR</span></a>
+		<div class="element empty-element"></div>
+ 	</div>
+	<div class="row">
+	  <a href="#CephGen" class="element Cephalosporin"><span>5th Gen Cephalosporin</span></a>
+	  <a href="#Ceftaroline" 		title="Ceftaroline"		class="element Cephalosporin"><span>CTL</span></a>
+	  <a href="#Ceftobiprole" 		title="Ceftobiprole"	class="element Cephalosporin"><span>CTO</span></a>
+	  <a href="#Cefepime" 			title="Cefepime"		class="element Cephalosporin"><span>CEP</span></a>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+	
+		</div>
+				<div class="row">
+	  <a href="#CephGen" class="element Cephalosporin"><span>Cephalosporin + Inhibitor</span></a>
+	  <a href="#Ceftazidime-avibactam" title="Ceftazidime-avibactam" 	class="element Cephalosporin"><span>CTV</span></a>
+	  <a href="#Ceftolozane-tazobactam" title="Ceftolozane-tazobactam"	class="element Cephalosporin"><span>CTT</span></a>
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		</div>
+		<div class="element empty-element"></div>
+				
+</div>
 <ul class="key">
-	<li class="group-base">base</li>
-	<li class="group-metadata">metadata</li>
-	<li class="group-sectioning">sectioning</li>
-	<li class="group-text-content">text-content</li>
-	<li class="group-text-semantics">text-semantics</li>
-	<li class="group-media">media</li>
-	<li class="group-embedded">embedded</li>
-	<li class="group-script">script</li>
-	<li class="group-edits">edits</li>
-	<li class="group-table">table</li>
-	<li class="group-forms">forms</li>
-	<li class="group-interactive">interactive</li>
-	<li class="group-web-components">web-components</li>
+	<li class="Penicillin">Penicillins</li>
+	<li class="Cephalosporin">Cephalosporin</li>
+	<li class="Gram-negativeBL">Gram-negative Beta-lactams</li>
+	<li class="Carbapenems">Carbapenems</li>
+	<li class="Glycopeptides">Glycopeptides</li>
+	<li class="Quinolone">Quinolones</li>
+	<li class="FolicAcid">Folic Acid Inhibitors</li>
+	<li class="Macrolides">Macrolides and Lincosamides</li>
+	<li class="Tetracyclines">Tetracyclines</li>
+	<li class="Aminoglycosides">Aminoglycosides</li>
+	<li class="Others">Others</li>
 </ul>
 
-<div class="descriptions">
-		  <div class="description group-base" id="html">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/html">&lt;html&gt;</a></h2>
-				<p>The HTML <code>&lt;html&gt;</code> element (or HTML root element) represents the root of an HTML document. All other elements must be descendants of this element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/html">https://developer.mozilla.org/en/docs/Web/HTML/Element/html</a></p>
-			</div>
-		  <div class="description group-base" id="body">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/body">&lt;body&gt;</a></h2>
-				<p>The HTML <code>&lt;body&gt;</code> element (or Sectioning root element) represents the root of all Sectioning elements in document. All other Sectioning elements must be descendants of this element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/body">https://developer.mozilla.org/en/docs/Web/HTML/Element/body</a></p>
-			</div>
-		  <div class="description group-forms" id="output">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/output">&lt;output&gt;</a></h2>
-				<p>The HTML <code>&lt;output&gt;</code> element represents the result of a calculation or user action.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/output">https://developer.mozilla.org/en/docs/Web/HTML/Element/output</a></p>
-			</div>
-		  <div class="description group-metadata" id="base">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/base">&lt;base&gt;</a></h2>
-				<p>The HTML <code>&lt;base&gt;</code> element specifies the base URL to use for all relative URLs contained within a document. There can be only one <code>&lt;base&gt;</code> element in a document.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/base">https://developer.mozilla.org/en/docs/Web/HTML/Element/base</a></p>
-			</div>
-		  <div class="description group-sectioning" id="h1-h6">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/h1">&lt;h1-h6&gt;</a></h2>
-				<p>Heading elements implement six levels of document headings, <code>&lt;h1&gt;</code> is the most important and <code>&lt;h6&gt;</code> is the least. A heading element briefly describes the topic of the section it introduces. Heading information may be used by user agents, for example, to construct a table of contents for a document automatically.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/h1">https://developer.mozilla.org/en/docs/Web/HTML/Element/h1</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="strong">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/strong">&lt;strong&gt;</a></h2>
-				<p>The HTML Strong Element (<code>&lt;strong&gt;</code>) gives text strong importance, and is typically displayed in bold.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/strong">https://developer.mozilla.org/en/docs/Web/HTML/Element/strong</a></p>
-			</div>
-		  <div class="description group-media" id="area">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/area">&lt;area&gt;</a></h2>
-				<p>The HTML <code>&lt;area&gt;</code> element defines a hot-spot region on an image, and optionally associates it with a hypertext link. This element is used only within a <code>&lt;map&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/area">https://developer.mozilla.org/en/docs/Web/HTML/Element/area</a></p>
-			</div>
-		  <div class="description group-embedded" id="param">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/param">&lt;param&gt;</a></h2>
-				<p>The HTML <code>&lt;param&gt;</code> Element (or HTML Parameter Element) defines parameters for <code>&lt;object&gt;</code>.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/param">https://developer.mozilla.org/en/docs/Web/HTML/Element/param</a></p>
-			</div>
-		  <div class="description group-table" id="caption">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/caption">&lt;caption&gt;</a></h2>
-				<p>The HTML <code>&lt;caption&gt;</code> Element (or HTML Table Caption Element) represents the title of a table. Though it is always the first descendant of a <code>&lt;table&gt;</code>, its styling, using CSS, may place it elsewhere, relative to the table.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/caption">https://developer.mozilla.org/en/docs/Web/HTML/Element/caption</a></p>
-			</div>
-		  <div class="description group-table" id="th">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/th">&lt;th&gt;</a></h2>
-				<p>The HTML element table header cell <code>&lt;th&gt;</code> defines a cell that is a header for a group of cells of a table. The group of cells that the header refers to is defined by the scope and headers attribute.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/th">https://developer.mozilla.org/en/docs/Web/HTML/Element/th</a></p>
-			</div>
-		  <div class="description group-forms" id="input">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/input">&lt;input&gt;</a></h2>
-				<p>The HTML element <code>&lt;input&gt;</code> is used to create interactive controls for web-based forms in order to accept data from the user. How an <code>&lt;input&gt;</code> works varies considerably depending on the value of its type attribute.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/input">https://developer.mozilla.org/en/docs/Web/HTML/Element/input</a></p>
-			</div>
-		  <div class="description group-forms" id="progress">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/progress">&lt;progress&gt;</a></h2>
-				<p>The HTML <code>&lt;progress&gt;</code> Element is used to view the completion progress of a task. While the specifics of how it's displayed is left up to the browser developer, it's typically displayed as a progress bar. Javascript can be used to manipulate the value of progress bar.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/progress">https://developer.mozilla.org/en/docs/Web/HTML/Element/progress</a></p>
-			</div>
-		  <div class="description group-metadata" id="head">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/head">&lt;head&gt;</a></h2>
-				<p>The HTML <code>&lt;head&gt;</code> element provides general information (metadata) about the document, including its title and links to/definitions of scripts and style sheets.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/head">https://developer.mozilla.org/en/docs/Web/HTML/Element/head</a></p>
-			</div>
-		  <div class="description group-sectioning" id="hgroup">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/hgroup">&lt;hgroup&gt;</a></h2>
-				<p>The HTML <code>&lt;hgroup&gt;</code> Element (HTML Headings Group Element) represents the heading of a section. It defines a single title that participates in the outline of the document as the heading of the implicit or explicit section that it belongs to.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/hgroup">https://developer.mozilla.org/en/docs/Web/HTML/Element/hgroup</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="sub">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/sub">&lt;sub&gt;</a></h2>
-				<p>The HTML Subscript Element (<code>&lt;sub&gt;</code>) defines a span of text that should be displayed, for typographic reasons, lower, and often smaller, than the main span of text.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/sub">https://developer.mozilla.org/en/docs/Web/HTML/Element/sub</a></p>
-			</div>
-		  <div class="description group-media" id="audio">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/audio">&lt;audio&gt;</a></h2>
-				<p>The HTML <code>&lt;audio&gt;</code> element is used to embed sound content in documents. It may contain several audio sources, represented using the src attribute or the <code>&lt;source&gt;</code> element; the browser will choose the most suitable one.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/audio">https://developer.mozilla.org/en/docs/Web/HTML/Element/audio</a></p>
-			</div>
-		  <div class="description group-embedded" id="source">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/source">&lt;source&gt;</a></h2>
-				<p>The HTML <code>&lt;source&gt;</code> element is used to specify multiple media resources for <code>&lt;picture&gt;</code>, <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements. It is an empty element. It is commonly used to serve the same media in multiple formats supported by different browsers.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/source">https://developer.mozilla.org/en/docs/Web/HTML/Element/source</a></p>
-			</div>
-		  <div class="description group-table" id="col">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/col">&lt;col&gt;</a></h2>
-				<p>The HTML Table Column Element (<code>&lt;col&gt;</code>) defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <code>&lt;colgroup&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/col">https://developer.mozilla.org/en/docs/Web/HTML/Element/col</a></p>
-			</div>
-		  <div class="description group-table" id="thead">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/thead">&lt;thead&gt;</a></h2>
-				<p>The HTML Table Head Element (<code>&lt;thead&gt;</code>) defines a set of rows defining the head of the columns of the table.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/thead">https://developer.mozilla.org/en/docs/Web/HTML/Element/thead</a></p>
-			</div>
-		  <div class="description group-forms" id="keygen">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/keygen">&lt;keygen&gt;</a></h2>
-				<p>The HTML <code>&lt;keygen&gt;</code> element exists to facilitate generation of key material, and submission of the public key as part of an HTML form. This mechanism is designed for use with Web-based certificate management systems. It is expected that the <code>&lt;keygen&gt;</code> element will be used in an HTML form along with other information needed to construct a certificate request, and that the result of the process will be a signed certificate.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/keygen">https://developer.mozilla.org/en/docs/Web/HTML/Element/keygen</a></p>
-			</div>
-		  <div class="description group-forms" id="select">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/select">&lt;select&gt;</a></h2>
-				<p>The HTML select (<code>&lt;select&gt;</code>) element represents a control that presents a menu of options. The options within the menu are represented by <code>&lt;option&gt;</code> elements, which can be grouped by <code>&lt;optgroup&gt;</code> elements. Options can be pre-selected for the user.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/select">https://developer.mozilla.org/en/docs/Web/HTML/Element/select</a></p>
-			</div>
-		  <div class="description group-metadata" id="style">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/style">&lt;style&gt;</a></h2>
-				<p>The HTML <code>&lt;style&gt;</code> element contains style information for a document, or part of a document. By default, the style instructions written inside that element are expected to be CSS.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/style">https://developer.mozilla.org/en/docs/Web/HTML/Element/style</a></p>
-			</div>
-		  <div class="description group-sectioning" id="nav">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/nav">&lt;nav&gt;</a></h2>
-				<p>The HTML <code>&lt;nav&gt;</code> element (HTML Navigation Element) represents a section of a page that links to other pages or to parts within the page: a section with navigation links.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/nav">https://developer.mozilla.org/en/docs/Web/HTML/Element/nav</a></p>
-			</div>
-		  <div class="description group-text-content" id="figcaption">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/figcaption">&lt;figcaption&gt;</a></h2>
-				<p>The HTML <code>&lt;figcaption&gt;</code> element represents a caption or a legend associated with a figure or an illustration described by the rest of the data of the <code>&lt;figure&gt;</code> element which is its immediate ancestor which means <code>&lt;figcaption&gt;</code> can be the first or last element inside a <code>&lt;figure&gt;</code> block. Also, the HTML Figcaption Element is optional; if not provided, then the parent figure element will have no caption.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/figcaption">https://developer.mozilla.org/en/docs/Web/HTML/Element/figcaption</a></p>
-			</div>
-		  <div class="description group-text-content" id="p">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/p">&lt;p&gt;</a></h2>
-				<p>The HTML <code>&lt;p&gt;</code> element (or HTML Paragraph Element) represents a paragraph of text.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/p">https://developer.mozilla.org/en/docs/Web/HTML/Element/p</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="bdi">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/bdi">&lt;bdi&gt;</a></h2>
-				<p>The HTML <code>&lt;bdi&gt;</code> Element (or Bi-Directional Isolation Element) isolates a span of text that might be formatted in a different direction from other text outside it.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/bdi">https://developer.mozilla.org/en/docs/Web/HTML/Element/bdi</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="data">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/data">&lt;data&gt;</a></h2>
-				<p>The HTML <code>&lt;data&gt;</code> Element links a given content with a machine-readable translation. If the content is time- or date-related, the <code>&lt;time&gt;</code> must be used.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/data">https://developer.mozilla.org/en/docs/Web/HTML/Element/data</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="mark">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/mark">&lt;mark&gt;</a></h2>
-				<p>The HTML Mark Element (<code>&lt;mark&gt;</code>) represents highlighted text, i.e., a run of text marked for reference purpose, due to its relevance in a particular context. For example it can be used in a page showing search results to highlight every instance of the searched-for word.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/mark">https://developer.mozilla.org/en/docs/Web/HTML/Element/mark</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="ruby">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/ruby">&lt;ruby&gt;</a></h2>
-				<p>The HTML <code>&lt;ruby&gt;</code> Element represents a ruby annotation. Ruby annotations are for showing pronunciation of East Asian characters.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/ruby">https://developer.mozilla.org/en/docs/Web/HTML/Element/ruby</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="sup">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/sup">&lt;sup&gt;</a></h2>
-				<p>The HTML Superscript Element (<code>&lt;sup&gt;</code>) defines a span of text that should be displayed, for typographic reasons, higher, and often smaller, than the main span of text.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/sup">https://developer.mozilla.org/en/docs/Web/HTML/Element/sup</a></p>
-			</div>
-		  <div class="description group-media" id="map">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/map">&lt;map&gt;</a></h2>
-				<p>The HTML <code>&lt;map&gt;</code> element is used with <code>&lt;area&gt;</code> elements to define an image map (a clickable link area).</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/map">https://developer.mozilla.org/en/docs/Web/HTML/Element/map</a></p>
-			</div>
-		  <div class="description group-script" id="canvas">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/canvas">&lt;canvas&gt;</a></h2>
-				<p>The HTML <code>&lt;canvas&gt;</code> Element can be used to draw graphics via scripting (usually JavaScript). For example, it can be used to draw graphs, make photo compositions or even perform animations. You may (and should) provide alternate content inside the <code>&lt;canvas&gt;</code> block. That content will be rendered both on older browsers that don't support canvas and in browsers with JavaScript disabled.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/canvas">https://developer.mozilla.org/en/docs/Web/HTML/Element/canvas</a></p>
-			</div>
-		  <div class="description group-table" id="colgroup">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/colgroup">&lt;colgroup&gt;</a></h2>
-				<p>The HTML Table Column Group Element (<code>&lt;colgroup&gt;</code>) defines a group of columns within a table.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/colgroup">https://developer.mozilla.org/en/docs/Web/HTML/Element/colgroup</a></p>
-			</div>
-		  <div class="description group-table" id="tr">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/tr">&lt;tr&gt;</a></h2>
-				<p>The HTML element table row <code>&lt;tr&gt;</code> defines a row of cells in a table. Those can be a mix of <code>&lt;td&gt;</code> and <code>&lt;th&gt;</code> elements.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/tr">https://developer.mozilla.org/en/docs/Web/HTML/Element/tr</a></p>
-			</div>
-		  <div class="description group-forms" id="label">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/label">&lt;label&gt;</a></h2>
-				<p>The HTML Label Element (<code>&lt;label&gt;</code>) represents a caption for an item in a user interface. It can be associated with a control either by placing the control element inside the <code>&lt;label&gt;</code> element, or by using the for attribute. Such a control is called the labeled control of the label element. With one input can be assosiated few labels.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/label">https://developer.mozilla.org/en/docs/Web/HTML/Element/label</a></p>
-			</div>
-		  <div class="description group-interactive" id="details">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/details">&lt;details&gt;</a></h2>
-				<p>The HTML Details Element (<code>&lt;details&gt;</code>) is used as a disclosure widget from which the user can retrieve additional information.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/details">https://developer.mozilla.org/en/docs/Web/HTML/Element/details</a></p>
-			</div>
-		  <div class="description group-metadata" id="title">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/title">&lt;title&gt;</a></h2>
-				<p>The HTML <code>&lt;title&gt;</code> element defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text and any contained tags are not interpreted.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/title">https://developer.mozilla.org/en/docs/Web/HTML/Element/title</a></p>
-			</div>
-		  <div class="description group-sectioning" id="section">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/section">&lt;section&gt;</a></h2>
-				<p>The HTML <code>&lt;section&gt;</code> element represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading. Each <code>&lt;section&gt;</code> should be identified, typically by including a heading (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> element) as a child of the <code>&lt;section&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/section">https://developer.mozilla.org/en/docs/Web/HTML/Element/section</a></p>
-			</div>
-		  <div class="description group-text-content" id="figure">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/figure">&lt;figure&gt;</a></h2>
-				<p>The HTML <code>&lt;figure&gt;</code> element represents self-contained content, frequently with a caption (<code>&lt;figcaption&gt;</code>), and is typically referenced as a single unit. While it is related to the main flow, its position is independent of the main flow. Usually this is an image, an illustration, a diagram, a code snippet, or a schema that is referenced in the main text, but that can be moved to another page or to an appendix without affecting the main flow.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/figure">https://developer.mozilla.org/en/docs/Web/HTML/Element/figure</a></p>
-			</div>
-		  <div class="description group-text-content" id="pre">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/pre">&lt;pre&gt;</a></h2>
-				<p>The HTML <code>&lt;pre&gt;</code> element (or HTML Preformatted Text) represents preformatted text. Text within this element is typically displayed in a non-proportional font exactly as it is laid out in the file. Whitespaces inside this element are displayed as typed.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/pre">https://developer.mozilla.org/en/docs/Web/HTML/Element/pre</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="bdo">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/bdo">&lt;bdo&gt;</a></h2>
-				<p>The HTML <code>&lt;bdo&gt;</code> Element (or HTML bidirectional override element) is used to override the current directionality of text. It causes the directionality of the characters to be ignored in favor of the specified directionality.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/bdo">https://developer.mozilla.org/en/docs/Web/HTML/Element/bdo</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="dfn">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dfn">&lt;dfn&gt;</a></h2>
-				<p>The HTML Definition Element (<code>&lt;dfn&gt;</code>) represents the defining instance of a term.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dfn">https://developer.mozilla.org/en/docs/Web/HTML/Element/dfn</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="q">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/q">&lt;q&gt;</a></h2>
-				<p>The HTML Quote Element (<code>&lt;q&gt;</code>) indicates that the enclosed text is a short inline quotation. This element is intended for short quotations that don't require paragraph breaks; for long quotations use <code>&lt;blockquote&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/q">https://developer.mozilla.org/en/docs/Web/HTML/Element/q</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="s">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/s">&lt;s&gt;</a></h2>
-				<p>The HTML Strikethrough Element (<code>&lt;s&gt;</code>) renders text with a strikethrough, or a line through it. Use the <code>&lt;s&gt;</code> element to represent things that are no longer relevant or no longer accurate. However, <code>&lt;s&gt;</code> is not appropriate when indicating document edits; for that, use the <code>&lt;del&gt;</code> and <code>&lt;ins&gt;</code> elements, as appropriate.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/s">https://developer.mozilla.org/en/docs/Web/HTML/Element/s</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="time">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/time">&lt;time&gt;</a></h2>
-				<p>The HTML <code>&lt;time&gt;</code> element represents either a time on a 24-hour clock or a precise date in the Gregorian calendar (with optional time and timezone information).</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/time">https://developer.mozilla.org/en/docs/Web/HTML/Element/time</a></p>
-			</div>
-		  <div class="description group-media" id="track">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/track">&lt;track&gt;</a></h2>
-				<p>The HTML <code>&lt;track&gt;</code> element is used as a child of the media elements—<code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>. It lets you specify timed text tracks (or time-based data), for example to automatically handle subtitles. The tracks are formatted in WebVTT format (.vtt files) — Web Video Text Tracks.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/track">https://developer.mozilla.org/en/docs/Web/HTML/Element/track</a></p>
-			</div>
-		  <div class="description group-script" id="noscript">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/noscript">&lt;noscript&gt;</a></h2>
-				<p>The HTML <code>&lt;noscript&gt;</code> Element defines a section of html to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/noscript">https://developer.mozilla.org/en/docs/Web/HTML/Element/noscript</a></p>
-			</div>
-		  <div class="description group-table" id="table">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/table">&lt;table&gt;</a></h2>
-				<p>The HTML Table Element (<code>&lt;table&gt;</code>) represents data in two dimensions or more.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/table">https://developer.mozilla.org/en/docs/Web/HTML/Element/table</a></p>
-			</div>
-		  <div class="description group-forms" id="button">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/button">&lt;button&gt;</a></h2>
-				<p>The HTML <code>&lt;button&gt;</code> Element represents a clickable button.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/button">https://developer.mozilla.org/en/docs/Web/HTML/Element/button</a></p>
-			</div>
-		  <div class="description group-forms" id="legend">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/legend">&lt;legend&gt;</a></h2>
-				<p>The HTML <code>&lt;legend&gt;</code> Element (or HTML Legend Field Element) represents a caption for the content of its parent <code>&lt;fieldset&gt;</code>.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/legend">https://developer.mozilla.org/en/docs/Web/HTML/Element/legend</a></p>
-			</div>
-		  <div class="description group-interactive" id="dialog">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dialog">&lt;dialog&gt;</a></h2>
-				<p>The HTML <code>&lt;dialog&gt;</code> element represents a dialog box or other interactive component, such as an inspector or window. <code>&lt;form&gt;</code> elements can be integrated within a dialog by specifying them with the attribute method="dialog". When such a form is submitted, the dialog is closed with a returnValue attribute set to the value of the submit button used.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dialog">https://developer.mozilla.org/en/docs/Web/HTML/Element/dialog</a></p>
-			</div>
-		  <div class="description group-sectioning" id="address">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/address">&lt;address&gt;</a></h2>
-				<p>The HTML <code>&lt;address&gt;</code> element supplies contact information for its nearest <code>&lt;article&gt;</code> or <code>&lt;body&gt;</code> ancestor; in the latter case, it applies to the whole document.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/address">https://developer.mozilla.org/en/docs/Web/HTML/Element/address</a></p>
-			</div>
-		  <div class="description group-text-content" id="dd">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dd">&lt;dd&gt;</a></h2>
-				<p>The HTML <code>&lt;dd&gt;</code> element (HTML Description Element) indicates the description of a term in a description list (<code>&lt;dl&gt;</code>) element. This element can occur only as a child element of a definition list and it must follow a <code>&lt;dt&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dd">https://developer.mozilla.org/en/docs/Web/HTML/Element/dd</a></p>
-			</div>
-		  <div class="description group-text-content" id="hr">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/hr">&lt;hr&gt;</a></h2>
-				<p>The HTML <code>&lt;hr&gt;</code> element represents a thematic break between paragraph-level elements (for example, a change of scene in a story, or a shift of topic with a section). In previous versions of HTML, it represented a horizontal rule. It may still be displayed as a horizontal rule in visual browsers, but is now defined in semantic terms, rather than presentational terms.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/hr">https://developer.mozilla.org/en/docs/Web/HTML/Element/hr</a></p>
-			</div>
-		  <div class="description group-text-content" id="ul">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/ul">&lt;ul&gt;</a></h2>
-				<p>The HTML <code>&lt;ul&gt;</code> element (or HTML Unordered List Element) represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless. Typically, unordered-list items are displayed with a bullet, which can be of several forms, like a dot, a circle or a squared. The bullet style is not defined in the HTML description of the page, but in its associated CSS, using the list-style-type property.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/ul">https://developer.mozilla.org/en/docs/Web/HTML/Element/ul</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="br">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/br">&lt;br&gt;</a></h2>
-				<p>The HTML element line break <code>&lt;br&gt;</code> produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/br">https://developer.mozilla.org/en/docs/Web/HTML/Element/br</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="em">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/em">&lt;em&gt;</a></h2>
-				<p>The HTML element emphasis  <code>&lt;em&gt;</code> marks text that has stress emphasis. The <code>&lt;em&gt;</code> element can be nested, with each level of nesting indicating a greater degree of emphasis.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/em">https://developer.mozilla.org/en/docs/Web/HTML/Element/em</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="rp">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/rp">&lt;rp&gt;</a></h2>
-				<p>The HTML <code>&lt;rp&gt;</code> element is used to provide fall-back parenthesis for browsers non-supporting ruby annotations. Ruby annotations are for showing pronounciation of East Asian characters, like using Japanese furigana or Taiwainese bopomofo characters. The <code>&lt;rp&gt;</code> element is used in the case of lack of <code>&lt;ruby&gt;</code> element support its content has what should be displayed in order to indicate the presence of a ruby annotation, usually parentheses.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/rp">https://developer.mozilla.org/en/docs/Web/HTML/Element/rp</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="samp">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/samp">&lt;samp&gt;</a></h2>
-				<p>The HTML <code>&lt;samp&gt;</code> element is an element intended to identify sample output from a computer program. It is usually displayed in the browser's default monotype font (such as Lucida Console).</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/samp">https://developer.mozilla.org/en/docs/Web/HTML/Element/samp</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="u">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/u">&lt;u&gt;</a></h2>
-				<p>The HTML Underline Element (<code>&lt;u&gt;</code>) renders text with an underline, a line under the baseline of its content.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/u">https://developer.mozilla.org/en/docs/Web/HTML/Element/u</a></p>
-			</div>
-		  <div class="description group-media" id="video">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/video">&lt;video&gt;</a></h2>
-				<p>Use the  HTML <code>&lt;video&gt;</code> element to embed video content in a document. The video element contains one or more video sources. To specify a video source, use either the src attribute or the <code>&lt;source&gt;</code> element; the browser will choose the most suitable one.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/video">https://developer.mozilla.org/en/docs/Web/HTML/Element/video</a></p>
-			</div>
-		  <div class="description group-script" id="script">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/script">&lt;script&gt;</a></h2>
-				<p>The HTML Script Element (<code>&lt;script&gt;</code>) is used to embed or reference an executable script within an HTML or XHTML document.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/script">https://developer.mozilla.org/en/docs/Web/HTML/Element/script</a></p>
-			</div>
-		  <div class="description group-table" id="tbody">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/tbody">&lt;tbody&gt;</a></h2>
-				<p>The HTML Table Body Element (<code>&lt;tbody&gt;</code>) defines one or more <code>&lt;tr&gt;</code> element data-rows to be the body of its parent <code>&lt;table&gt;</code> element (as long as no <code>&lt;tr&gt;</code> elements are immediate children of that table element.)  In conjunction with a preceding <code>&lt;thead&gt;</code> and/or <code>&lt;tfoot&gt;</code> element, <code>&lt;tbody&gt;</code> provides additional semantic information for devices such as printers and displays. Of the parent table's child elements, <code>&lt;tbody&gt;</code> represents the content which, when longer than a page, will most likely differ for each page printed; while the content of <code>&lt;thead&gt;</code> and <code>&lt;tfoot&gt;</code> will be the same or similar for each page printed. For displays, <code>&lt;tbody&gt;</code> will enable separate scrolling of the <code>&lt;thead&gt;</code>, <code>&lt;tfoot&gt;</code>, and <code>&lt;caption&gt;</code> elements of the same parent <code>&lt;table&gt;</code> element.  Note that unlike the <code>&lt;thead&gt;</code>, <code>&lt;tfoot&gt;</code>, and <code>&lt;caption&gt;</code> elements however, multiple <code>&lt;tbody&gt;</code> elements are permitted (if consecutive), allowing the data-rows in long tables to be divided into different sections, each separately formatted as needed.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/tbody">https://developer.mozilla.org/en/docs/Web/HTML/Element/tbody</a></p>
-			</div>
-		  <div class="description group-forms" id="datalist">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/datalist">&lt;datalist&gt;</a></h2>
-				<p>The HTML Datalist Element (<code>&lt;datalist&gt;</code>) contains a set of <code>&lt;option&gt;</code> elements that represent the values available for other controls.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/datalist">https://developer.mozilla.org/en/docs/Web/HTML/Element/datalist</a></p>
-			</div>
-		  <div class="description group-forms" id="meter">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/meter">&lt;meter&gt;</a></h2>
-				<p>The HTML <code>&lt;meter&gt;</code> Element represents either a scalar value within a known range or a fractional value.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/meter">https://developer.mozilla.org/en/docs/Web/HTML/Element/meter</a></p>
-			</div>
-		  <div class="description group-interactive" id="menu">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/menu">&lt;menu&gt;</a></h2>
-				<p>The HTML <code>&lt;menu&gt;</code> element represents a group of commands that a user can perform or activate. This includes both list menus, which might appear across the top of a screen, as well as context menus, such as those that might appear underneath a button after it has been clicked.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/menu">https://developer.mozilla.org/en/docs/Web/HTML/Element/menu</a></p>
-			</div>
-		  <div class="description group-sectioning" id="article">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/article">&lt;article&gt;</a></h2>
-				<p>The HTML <code>&lt;article&gt;</code> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). This could be a forum post, a magazine or newspaper article, a blog entry, an object, or any other independent item of content. Each <code>&lt;article&gt;</code> should be identified, typically by including a heading (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> element) as a child of the <code>&lt;article&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/article">https://developer.mozilla.org/en/docs/Web/HTML/Element/article</a></p>
-			</div>
-		  <div class="description group-text-content" id="div">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/div">&lt;div&gt;</a></h2>
-				<p>The HTML <code>&lt;div&gt;</code> element (or HTML Document Division Element) is the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <code>&lt;article&gt;</code> or <code>&lt;nav&gt;</code>) is appropriate.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/div">https://developer.mozilla.org/en/docs/Web/HTML/Element/div</a></p>
-			</div>
-		  <div class="description group-text-content" id="li">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/li">&lt;li&gt;</a></h2>
-				<p>The HTML <code>&lt;li&gt;</code> element (or HTML List Item Element) is used to represent an item in a list. It must be contained in a parent element: an ordered list (<code>&lt;ol&gt;</code>), an unordered list (<code>&lt;ul&gt;</code>), or a menu (<code>&lt;menu&gt;</code>). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/li">https://developer.mozilla.org/en/docs/Web/HTML/Element/li</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="abbr">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/abbr">&lt;abbr&gt;</a></h2>
-				<p>The HTML <code>&lt;abbr&gt;</code> element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it. If present, the title attribute must contain this full description and nothing else.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/abbr">https://developer.mozilla.org/en/docs/Web/HTML/Element/abbr</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="cite">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/cite">&lt;cite&gt;</a></h2>
-				<p>The HTML Citation Element (<code>&lt;cite&gt;</code>) represents a reference to a creative work. It must include the title of a work or a URL reference, which may be in an abbreviated form according to the conventions used for the addition of citation metadata.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/cite">https://developer.mozilla.org/en/docs/Web/HTML/Element/cite</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="i">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/i">&lt;i&gt;</a></h2>
-				<p>The HTML <code>&lt;i&gt;</code> Element represents a range of text that is set off from the normal text for some reason, for example, technical terms, foreign language phrases, or fictional character thoughts. It is typically displayed in italic type.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/i">https://developer.mozilla.org/en/docs/Web/HTML/Element/i</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="rt">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/rt">&lt;rt&gt;</a></h2>
-				<p>The HTML <code>&lt;rt&gt;</code> Element embraces pronunciation of characters presented in a ruby annotations, which are used to describe the pronunciation of East Asian characters. This element is always used inside a <code>&lt;ruby&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/rt">https://developer.mozilla.org/en/docs/Web/HTML/Element/rt</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="small">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/small">&lt;small&gt;</a></h2>
-				<p>The HTML Small Element (<code>&lt;small&gt;</code>) makes the text font size one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size.  In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text, independent of its styled presentation.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/small">https://developer.mozilla.org/en/docs/Web/HTML/Element/small</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="var">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/var">&lt;var&gt;</a></h2>
-				<p>The HTML Variable Element (<code>&lt;var&gt;</code>) represents a variable in a mathematical expression or a programming context.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/var">https://developer.mozilla.org/en/docs/Web/HTML/Element/var</a></p>
-			</div>
-		  <div class="description group-embedded" id="embed">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/embed">&lt;embed&gt;</a></h2>
-				<p>The HTML <code>&lt;embed&gt;</code> Element represents an integration point for an external application or interactive content (in other words, a plug-in).</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/embed">https://developer.mozilla.org/en/docs/Web/HTML/Element/embed</a></p>
-			</div>
-		  <div class="description group-edits" id="del">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/del">&lt;del&gt;</a></h2>
-				<p>The HTML Deleted Text Element (<code>&lt;del&gt;</code>) represents a range of text that has been deleted from a document. This element is often (but need not be) rendered with strike-through text.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/del">https://developer.mozilla.org/en/docs/Web/HTML/Element/del</a></p>
-			</div>
-		  <div class="description group-table" id="td">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/td">&lt;td&gt;</a></h2>
-				<p>The Table cell HTML element (<code>&lt;td&gt;</code>) defines a cell of a table that contains data. It participates in the table model.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/td">https://developer.mozilla.org/en/docs/Web/HTML/Element/td</a></p>
-			</div>
-		  <div class="description group-forms" id="fieldset">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/fieldset">&lt;fieldset&gt;</a></h2>
-				<p>The HTML <code>&lt;fieldset&gt;</code> element is used to group several controls as well as labels (<code>&lt;label&gt;</code>) within a web form.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/fieldset">https://developer.mozilla.org/en/docs/Web/HTML/Element/fieldset</a></p>
-			</div>
-		  <div class="description group-forms" id="optgroup">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/optgroup">&lt;optgroup&gt;</a></h2>
-				<p>In a Web form, the HTML <code>&lt;optgroup&gt;</code> element  creates a grouping of options within a <code>&lt;select&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/optgroup">https://developer.mozilla.org/en/docs/Web/HTML/Element/optgroup</a></p>
-			</div>
-		  <div class="description group-interactive" id="menuitem">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/menuitem">&lt;menuitem&gt;</a></h2>
-				<p>The HTML <code>&lt;menuitem&gt;</code> element represents a command that a user is able to invoke through a popup menu. This includes context menus, as well as menus that might be attached to a menu button.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/menuitem">https://developer.mozilla.org/en/docs/Web/HTML/Element/menuitem</a></p>
-			</div>
-		  <div class="description group-sectioning" id="footer">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/footer">&lt;footer&gt;</a></h2>
-				<p>The HTML <code>&lt;footer&gt;</code> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/footer">https://developer.mozilla.org/en/docs/Web/HTML/Element/footer</a></p>
-			</div>
-		  <div class="description group-text-content" id="dl">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dl">&lt;dl&gt;</a></h2>
-				<p>The HTML <code>&lt;dl&gt;</code> element (or HTML Description List Element) encloses a list of pairs of terms and descriptions. Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dl">https://developer.mozilla.org/en/docs/Web/HTML/Element/dl</a></p>
-			</div>
-		  <div class="description group-text-content" id="main">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/main">&lt;main&gt;</a></h2>
-				<p>The HTML <code>&lt;main&gt;</code> element represents the main content of  the <code>&lt;body&gt;</code> of a document or application. The main content area consists of content that is directly related to, or expands upon the central topic of a document or the central functionality of an application. This content should be unique to the document, excluding any content that is repeated across a set of documents such as sidebars, navigation links, copyright information, site logos, and search forms (unless the document's main function is as a search form).</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/main">https://developer.mozilla.org/en/docs/Web/HTML/Element/main</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="b">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/b">&lt;b&gt;</a></h2>
-				<p>The HTML <code>&lt;b&gt;</code> Element represents a span of text stylistically different from normal text, without conveying any special importance or relevance. It is typically used for keywords in a summary, product names in a review, or other spans of text whose typical presentation would be boldfaced. Another example of its use is to mark the lead sentence of each paragraph of an article.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/b">https://developer.mozilla.org/en/docs/Web/HTML/Element/b</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="code">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/code">&lt;code&gt;</a></h2>
-				<p>The HTML Code Element <code>&lt;code&gt;</code> represents a fragment of computer code. By default, it is displayed in the browser's default monospace font.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/code">https://developer.mozilla.org/en/docs/Web/HTML/Element/code</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="kbd">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/kbd">&lt;kbd&gt;</a></h2>
-				<p>The HTML Keyboard Input Element (<code>&lt;kbd&gt;</code>) represents user input and produces an inline element displayed in the browser's default monospace font.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/kbd">https://developer.mozilla.org/en/docs/Web/HTML/Element/kbd</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="rtc">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/rtc">&lt;rtc&gt;</a></h2>
-				<p>The HTML <code>&lt;rtc&gt;</code> Element embraces semantic annotations of characters presented in a ruby of <code>&lt;rb&gt;</code> elements used inside of <code>&lt;ruby&gt;</code> element. <code>&lt;rb&gt;</code> elements can have both pronunciation (<code>&lt;rt&gt;</code>) and semantic (<code>&lt;rtc&gt;</code>) annotations.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/rtc">https://developer.mozilla.org/en/docs/Web/HTML/Element/rtc</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="span">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/span">&lt;span&gt;</a></h2>
-				<p>The HTML <code>&lt;span&gt;</code> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <code>&lt;span&gt;</code> is very much like a <code>&lt;div&gt;</code> element, but <code>&lt;div&gt;</code> is a block-level element whereas a <code>&lt;span&gt;</code> is an inline element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/span">https://developer.mozilla.org/en/docs/Web/HTML/Element/span</a></p>
-			</div>
-		  <div class="description group-text-semantics" id="wbr">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/wbr">&lt;wbr&gt;</a></h2>
-				<p>The HTML element word break opportunity <code>&lt;wbr&gt;</code> represents a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/wbr">https://developer.mozilla.org/en/docs/Web/HTML/Element/wbr</a></p>
-			</div>
-		  <div class="description group-embedded" id="object">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/object">&lt;object&gt;</a></h2>
-				<p>The HTML Embedded Object Element (<code>&lt;object&gt;</code>) represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/object">https://developer.mozilla.org/en/docs/Web/HTML/Element/object</a></p>
-			</div>
-		  <div class="description group-edits" id="ins">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/ins">&lt;ins&gt;</a></h2>
-				<p>The HTML <code>&lt;ins&gt;</code> Element (or HTML Inserted Text) HTML represents a range of text that has been added to a document.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/ins">https://developer.mozilla.org/en/docs/Web/HTML/Element/ins</a></p>
-			</div>
-		  <div class="description group-table" id="tfoot">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/tfoot">&lt;tfoot&gt;</a></h2>
-				<p>The HTML Table Foot Element (<code>&lt;tfoot&gt;</code>) defines a set of rows summarizing the columns of the table.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/tfoot">https://developer.mozilla.org/en/docs/Web/HTML/Element/tfoot</a></p>
-			</div>
-		  <div class="description group-forms" id="form">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/form">&lt;form&gt;</a></h2>
-				<p>The HTML <code>&lt;form&gt;</code> element represents a document section that contains interactive controls to submit information to a web server.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/form">https://developer.mozilla.org/en/docs/Web/HTML/Element/form</a></p>
-			</div>
-		  <div class="description group-forms" id="option">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/option">&lt;option&gt;</a></h2>
-				<p>In a Web form, the HTML <code>&lt;option&gt;</code> element is used to create a control representing an item within a <code>&lt;select&gt;</code>, an <code>&lt;optgroup&gt;</code> or a <code>&lt;datalist&gt;</code> HTML5 element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/option">https://developer.mozilla.org/en/docs/Web/HTML/Element/option</a></p>
-			</div>
-		  <div class="description group-interactive" id="summary">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/summary">&lt;summary&gt;</a></h2>
-				<p>The HTML summary element (<code>&lt;summary&gt;</code>) is used as a summary, caption, or legend for the content of a <code>&lt;details&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/summary">https://developer.mozilla.org/en/docs/Web/HTML/Element/summary</a></p>
-			</div>
-		  <div class="description group-sectioning" id="header">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/header">&lt;header&gt;</a></h2>
-				<p>The HTML <code>&lt;header&gt;</code> element represents a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, wrapped section's header, a search form, and so on.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/header">https://developer.mozilla.org/en/docs/Web/HTML/Element/header</a></p>
-			</div>
-		  <div class="description group-text-content" id="dt">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dt">&lt;dt&gt;</a></h2>
-				<p>The HTML <code>&lt;dt&gt;</code> element (or HTML Definition Term Element) identifies a term in a definition list. This element can occur only as a child element of a <code>&lt;dl&gt;</code>. It is usually followed by a <code>&lt;dd&gt;</code> element; however, multiple <code>&lt;dt&gt;</code> elements in a row indicate several terms that are all defined by the immediate next <code>&lt;dd&gt;</code> element.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/dt">https://developer.mozilla.org/en/docs/Web/HTML/Element/dt</a></p>
-			</div>
-		  <div class="description group-text-content" id="ol">
-				<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/ol">&lt;ol&gt;</a></h2>
-				<p>The HTML <code>&lt;ol&gt;</code> Element (or HTML Ordered List Element) represents an ordered list of items. Typically, ordered-list items are displayed with a preceding numbering, which can be of any form, like numerals, letters or Romans numerals or even simple bullets. This numbered style is not defined in the HTML description of the page, but in its associated CSS, using the list-style-type property.</p>
-				<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/ol">https://developer.mozilla.org/en/docs/Web/HTML/Element/ol</a></p>
-			</div>
-		<div class="description  group-web-components" id="content">
-			<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/content">&lt;content&gt;</a></h2>
-			<p>The HTML <code>&lt;content&gt;</code> element is used inside of Shadow DOM as an insertion point. It is not intended to be used in ordinary HTML. It is used with Web Components.</p>
-			<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/content">https://developer.mozilla.org/en/docs/Web/HTML/Element/content</a></p>
-		</div>
-		<div class="description  group-web-components" id="element">
-			<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/element">&lt;element&gt;</a></h2>
-			<p>The HTML <code>&lt;element&gt;</code> element is used to define new custom DOM elements.</p>
-			<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/element">https://developer.mozilla.org/en/docs/Web/HTML/Element/element</a></p>
-		</div>
-		<div class="description  group-web-components" id="shadow">
-			<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/shadow">&lt;shadow&gt;</a></h2>
-			<p>The HTML <code>&lt;shadow&gt;</code> element is used as a shadow DOM insertion point. You might use it if you have created multiple shadow roots under a shadow host. It is not useful in ordinary HTML. It is used with Web Components.</p>
-			<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/shadow">https://developer.mozilla.org/en/docs/Web/HTML/Element/shadow</a></p>
-		</div>
-		<div class="description  group-web-components" id="template">
-			<h2><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/template">&lt;template&gt;</a></h2>
-			<p>The HTML template element <code>&lt;template&gt;</code> is a mechanism for holding client-side content that is not to be rendered when a page is loaded but may subsequently be instantiated during runtime using JavaScript. </p>
-			<p><a class="moz-link" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/template">https://developer.mozilla.org/en/docs/Web/HTML/Element/template</a></p>
-		</div>
-</div>
 
+<div class="descriptions">
+		  <div class="description Penicillin" id="BEN">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+			
+		  <div class="description Aminoglycosides" id="Gentamicin">
+				<h2><a href="https://www.bnf.org/">Gentamicin;</a></h2>
+				<p>Gentamicin is an antiribosomal</p>
+			</div>
+
+		  <div class="description Penicillin" id="Amoxicillin">
+				<h2><a href="https://www.bnf.org/">Amoxicillin/Ampicillin;</a></h2>
+				<p>Amoxicillin and ampicillin have the same spectrum, but amoxicillin is better tolerated.</p>
+			</div>
+
+		  <div class="description Penicillin" id="Flucloxacillin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+
+		  <div class="description Penicillin" id="Pivmecillinam">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+
+		  <div class="description Penicillin" id="Nitrofurantoin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+
+		  <div class="description Penicillin" id="Trimethoprim">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Doxycycline">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+
+		  <div class="description Penicillin" id="Clarithromycin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+
+		  <div class="description Penicillin" id="Fusidic">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Tobramycin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="CoAmox">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Temocillin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Vancomycin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Fosfomycin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Ciprofloxacin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Metronidazole">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Co-trimoxazole">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Tetracycline">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Erythromycin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Rifampicin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Amikacin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="PipTaz">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Aztreonam">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Teicoplanin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Daptomycin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Levofloxacin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Oxytetracycline">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Clindamycin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Linezolid">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Meropenem">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Ertapenem">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Imipenem">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Dalbavancin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Colistin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Ofloxacin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Minocycline">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Azithromycin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Chloramphenicol">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="MER-AVI">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Telavancin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Moxifloxacin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Tigecycline">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="TB">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="CEF">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Cefalexin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Cefazolin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Cefadroxil">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Cefuroxime">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Cefaclor">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Cefoxitin">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Cefotaxime">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Ceftazidime">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Cefixime">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Ceftriaxone">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Ceftaroline">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Ceftobiprole">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Cefepime">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="CephGen">
+				<h2><a href="https://www.bnf.org/"Generations of Cephalosporins</a></h2>
+				<p>There are 5 different generations of Cephalosporins, and the only 4th generation one has been removed from the market.</p>
+			</div>
+		  <div class="description Penicillin" id="Ceftazidime-avibactam">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+		  <div class="description Penicillin" id="Ceftolozane-tazobactam">
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+			</div>
+	
+
+
+<button onClick='document.getElementById("elementBEN").className = "element remove";'>Show only those active against anaerobic bacteria</button>
+</div>
+	
 		</main>
 		<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -1076,3 +820,68 @@ h1 {
 		</script>
 	</body>
 </html>
+
+<!--
+BEN
+Gentamicin
+Amoxicillin
+Flucloxacillin
+Pivmecillinam
+Nitrofurantoin
+Trimethoprim
+Doxycycline
+Clarithromycin
+Fusidic
+Tobramycin
+CoAmox
+Temocillin
+Vancomycin
+Fosfomycin
+Ciprofloxacin
+Metronidazole
+Co-trimoxazole
+Tetracycline
+Erythromycin
+Rifampicin
+Amikacin
+PipTaz
+Aztreonam
+Teicoplanin
+Daptomycin
+Levofloxacin
+Oxytetracycline
+Clindamycin
+Linezolid
+Meropenem
+Ertapenem
+Imipenem
+Dalbavancin
+Colistin
+Ofloxacin
+Minocycline
+Azithromycin
+Chloramphenicol
+MER-AVI
+Telavancin
+Moxifloxacin
+Tigecycline
+TB
+CEF
+Cefalexin
+Cefazolin
+Cefadroxil
+Cefuroxime
+Cefaclor
+Cefoxitin
+Cefotaxime
+Ceftazidime
+Cefixime
+Ceftriaxone
+Ceftaroline
+Ceftobiprole
+Cefepime
+CephGen
+Ceftazidime-avibactam
+Ceftolozane-tazobactam
+-->
+
