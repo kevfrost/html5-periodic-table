@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>Periodic Table of HTML elements</title>
+        <title>UK Antibiotics</title>
 		
 		<script>
-		     function HIDE() 
-		document.getElementById("BEN").className = "element empty-element";
-    
+		var count = 0;
+		const elements = [
+		"Benzylpenicillin",
+"Amoxicillin","Flucloxacillin",
+
+
+
+"Nitrofurantoin","Trimethoprim",
+"Doxycycline","Clarithromycin",
+
+"CoAmoxiclav","PipTaz",
+
+"Pivmecillinam","Temocillin","Aztreonam","Ceph1",
+
+
+"Cef1","Cefradine","Cefalexin","Cefazolin","Cefadroxil",
+
+"Ceph2",
+"Cef2","Cefuroxime","Cefaclor","Cefoxitin",
+
+"Ceph3",
+"Cef3","Cefotaxime","Ceftazidime","Cefixime","Ceftriaxone",
+
+
+"Metronidazole",
+"Tetracycline","Oxytetracycline","Minocycline","Erythromycin","Clindamycin","Azithromycin",
+
+"Gentamicin","Tobramycin","Amikacin",
+"Co-trimoxazole","Fosfomycin",
+
+"Vancomycin","Teicoplanin","Fusidic","Rifampicin",
+
+"Ciprofloxacin","Levofloxacin","Ofloxacin","Moxifloxacin",
+
+"Daptomycin","Linezolid","Tigecycline",
+
+"Meropenem","Ertapenem","Imipenem",
+
+
+"Colistin","Chloramphenicol","MER-AVI","Dalbavancin","Telavancin","Ceph5","Cef5","Ceftaroline","Ceftobiprole","Cefepime","CephEI","CefEI","Ceftazidime-avibactam","Ceftolozane-tazobactam"
+		
+		];
+		function Reveal()
+			{
+			if(count>elements.length){console.log("Out of Array");return;}
+			console.log(elements[count]);
+			
+			document.getElementById(elements[count]).style.visibility = "visible";
+			count++;
+			}
+		
+		
+		
+		     function Remove(Removed)
+{			
+			const array = Removed.split(",");
+			array.forEach(HIDE)
+		
+			
+ }   
+ function HIDE(RemovedItem)
+ {
+
+ 	document.getElementById(RemovedItem).className = "element remove";
+				
+ }
     </script>
 		
 		
@@ -30,10 +93,10 @@ h1 {
   color: #FFF; }
 
 .elements {
-  font-size: 10px; }
+  font-size: 15px; }
   @media screen and (min-width: 600px) {
     .elements {
-      font-size: calc(10px + 8 * ((100vw - 600px) / 1320)); } }
+      font-size: calc(16px + 8 * ((100vw - 600px) / 1320)); } }
   @media screen and (min-width: 1920px) {
     .elements {
       font-size: 18px; } }
@@ -48,13 +111,14 @@ h1 {
   .row {
     display: flex;
     text-align: center;
-    height: 6vmin;
+    height: 7vmin;
     justify-content: space-around; }
   .f-block .row {
     justify-content: flex-start; 
 	 padding-left: 170px;
    }
   .element {
+	visibility:hidden;
     display: flex;
     font-weight: bold;
     align-items: center;
@@ -72,11 +136,13 @@ h1 {
   .key {
     display: block;
     padding: 0;
-    width: 60%;
-    max-width: 650px;
+	font-size:60%;
+	text-align: center;
+    width: 80%;
+    max-width: 800px;
     list-style-type: none;
     color: #fff;
-    line-height: 1.8;
+    line-height: 1.6;
     font-weight: normal; }
   .key li {
     display: inline-block;
@@ -117,10 +183,12 @@ h1 {
 
 .remove {
 	text-decoration: line-through;
+	
 	color:#999;}
 
 .element.Penicillin {
-  background-color: #DE597C; }
+  background-color: #DE597C;
+  color:white;}
   .element.Penicillin:hover {
     background-color: #e1aaad; }
 
@@ -139,7 +207,8 @@ h1 {
   opacity: 1; }
 
 .element.Quinolone {
-  background-color: #37DE4D; }
+  background-color: #37DE4D; 
+	color:purple;}
   .element.Quinolone:hover {
     background-color: #e1b4aa; }
 
@@ -177,7 +246,8 @@ h1 {
   opacity: 1; }
 
 .element.Carbapenems {
-  background-color: #8D57DF; }
+  background-color: #8D57DF;
+  color:white; }
   .element.Carbapenems:hover {
     background-color: #e1d0aa; }
 
@@ -214,25 +284,6 @@ h1 {
 .hover-Others .element.Others {
   opacity: 1; }
 
-.element.Gram-negative beta-lactam {
-  background-color: #37DE4D; }
-  .element.Gram-negative beta-lactam:hover {
-    background-color: #d7e1aa; }
-
-.description.Gram-negative beta-lactam {
-  background-color: #37DE4D; }
-  .description.Gram-negative beta-lactam:hover {
-    background-color: #37DE4D; }
-
-.key li.Gram-negative beta-lactam:before {
-  background-color: #37DE4D; }
-
-.hover-Gram-negative beta-lactam .element {
-  opacity: .5; }
-
-.hover-Gram-negative beta-lactam .element.Gram-negative beta-lactam {
-  opacity: 1; }
-
 .element.Macrolides {
   background-color: #78ADE3; }
   .element.Macrolides:hover {
@@ -252,27 +303,29 @@ h1 {
 .hover-Macrolides .element.Macrolides {
   opacity: 1; }
 
-.element.Tetracyclines {
-  background-color: #6093E0; }
-  .element.Tetracyclines:hover {
+.element.Glycopeptides {
+  background-color: #6093E0;
+	color:white;  }
+  .element.Glycopeptides:hover {
     background-color: #ade1aa; }
 
-.description.Tetracyclines {
+.description.Glycopeptides {
   background-color: #6093E0; }
-  .description.Tetracyclines:hover {
+  .description.Glycopeptides:hover {
     background-color: rgba(137, 212, 132, 0.8); }
 
-.key li.Tetracyclines:before {
+.key li.Glycopeptides:before {
   background-color: #6093E0; }
 
-.hover-Tetracyclines .element {
+.hover-Glycopeptides .element {
   opacity: .5; }
 
-.hover-Tetracyclines .element.Tetracyclines {
+.hover-Glycopeptides .element.Glycopeptides {
   opacity: 1; }
 
 .element.Gram-negativeBL {
-  background-color: #47aa00; }
+  background-color: #47aa00;
+  color:white;  }
   .element.Gram-negativeBL:hover {
     background-color: #aae1b4; }
 
@@ -309,37 +362,39 @@ h1 {
 .hover-Aminoglycosides .element.Aminoglycosides {
   opacity: 1; }
 
-.element.Glycopeptides {
+.element.Tetracyclines {
   background-color: #E09669; }
-  .element.Glycopeptides:hover {
+  .element.Tetracyclines:hover {
     background-color: #aae1d0; }
 
-.description.Glycopeptides {
+.description.Tetracyclines {
   background-color: #E09669; }
-  .description.Glycopeptides:hover {
+  .description.Tetracyclines:hover {
     background-color: rgba(132, 212, 187, 0.8); }
 
-.key li.Glycopeptides:before {
+.key li.Tetracyclines:before {
   background-color: #E09669; }
 
-.hover-Glycopeptides .element {
+.hover-Tetracyclines .element {
   opacity: .5; }
 
-.hover-Glycopeptides .element.Glycopeptides {
+.hover-Tetracyclines .element.Tetracyclines {
   opacity: 1; }
 
 .element.Cephalosporin {
-  background-color: #84d4cf; }
+  background-color: #e1ad01; 
+  color:white;
+line-height:.9em;  }
   .element.Cephalosporin:hover {
     background-color: #aae1de; }
 
 .description.Cephalosporin {
-  background-color: rgba(170, 225, 222, 0.5); }
+  background-color: #e1ad01; }
   .description.Cephalosporin:hover {
     background-color: rgba(132, 212, 207, 0.8); }
 
 .key li.Cephalosporin:before {
-  background-color: #84d4cf; }
+  background-color: #e1ad01; }
 
 .hover-Cephalosporin .element {
   opacity: .5; }
@@ -350,12 +405,13 @@ h1 {
 	</head>
 	<body>
 		<main>
-			<h1>Periodic table of UK Antibiotics</h1>
+			<h1 id="title" onClick="Reveal();">UK Antibiotics</h1>
+			
 			<div class="elements">
 	<div class="row">
 		
 		<div class="element empty-element"></div>
-		<a title="Benzylpenicillin/Penicillin V" href="#BEN" id="elementBEN" class="element Penicillin"><span>BEN</span></a>
+		<a title="Benzylpenicillin/Penicillin V" href="#BEN" id="Benzylpenicillin" class="element Penicillin"><span>BEN<span style="font-size:10px;"><br>Penicillin V or G</span></span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
@@ -367,99 +423,103 @@ h1 {
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
-		<a title="Gentamicin" href="#Gentamicin" class="element Aminoglycosides"><span>GEN</span></a>
+		<a title="Gentamicin" href="#Gentamicin" id="Gentamicin" class="element Aminoglycosides"><span>GEN<span style="font-size:10px;"><br>Gentamicin</span</span></a>
 		<div class="element empty-element"></div>
 		
 	</div>
 	<div class="row">
 		
 		<div class="element empty-element"></div>
-		<a href="#Amoxicillin" 		title="Amoxicillin/Ampicillin"		class="element Penicillin"><span>AMO</span></a>
-		<a href="#Flucloxacillin" 	title="Flucloxacillin"	class="element Penicillin"><span>FLU</span></a>
-		<a href="#Pivmecillinam" 	title="Pivmecillinam"	class="element Gram-negativeBL"><span>PIV</span></a>
-		<a href="" 					title="1st Generation Cephalosporin"			class="element Cephalosporin"><span>C 1</span></a>
+		<a href="#Amoxicillin" 		id="Amoxicillin" 		title="Amoxicillin/Ampicillin"		class="element Penicillin"><span>AMO<span style="font-size:10px;"><br>Amoxicillin</span></span></a>
+		<a href="#Flucloxacillin" 	id="Flucloxacillin"		title="Flucloxacillin"	class="element Penicillin"><span>FLU<span style="font-size:10px;"><br>Flucloxacillin</span></span></a>
+		<a href="#Pivmecillinam" 	id="Pivmecillinam"		title="Pivmecillinam"	class="element Gram-negativeBL"><span>PIV<span style="font-size:10px;"><br>Pivmecillinam</span></span></a>
+		<a href="" 					id="Ceph1"				title="1st Generation Cephalosporin"			class="element Cephalosporin"><span style="font-size:10px;line-height:1.1;">1st Generation <br/>Cephalosporins</span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
-		<a href="#Nitrofurantoin" 	title="Nitrofurantoin"	class="element Others"><span>NIT</span></a>
-		<a href="#Trimethoprim" 	title="Trimethoprim"	class="element FolicAcid"><span>TRI</span></a>
-		<a href="#Doxycycline" 		title="Doxycycline"		class="element Tetracyclines"><span>DOX</span></a>
-		<a href="#Clarithromycin" 	title="Clarithromycin"	class="element Macrolides"><span>CLA</span></a>
-		<a href="#Fusidic" 			title="Fusidic acid/Sodium Fusidate"	class="element Others"><span>FUS</span></a>
-		<a href="#Tobramycin" 		title="Tobramycin" 		class="element Aminoglycosides"><span>TOB</span></a>
+		<a href="#Nitrofurantoin" 	id="Nitrofurantoin"		title="Nitrofurantoin"	class="element Others"><span style="color:purple;">NIT<span style="font-size:10px;"><br>Nitrofurantoin</span></span></a>
+		<a href="#Trimethoprim" 	id="Trimethoprim"		title="Trimethoprim"	class="element FolicAcid"><span style="color:brown;">TRI<span style="font-size:10px;"><br>Trimethoprim</span></span></a>
+		<a href="#Doxycycline" 		id="Doxycycline" 		title="Doxycycline"		class="element Tetracyclines" ><span >DOX<span style="font-size:10px;"><br>Doxycycline</span></span></a>
+		<a href="#Clarithromycin" 	id="Clarithromycin"		title="Clarithromycin"	class="element Macrolides"><span>CLA<span style="font-size:10px;"><br>Clarithromycin</span></span></a>
+		<a href="#Fusidic" 			id="Fusidic"			title="Fusidic acid/Sodium Fusidate"	class="element Others"><span>FUS<span style="font-size:10px;"><br>Fusidic acid</span></span></a>
+		<a href="#Tobramycin" 		id="Tobramycin"			title="Tobramycin" 		class="element Aminoglycosides"><span>TOB<span style="font-size:10px;"><br>Tobramycin</span></span></a>
 		<div class="element empty-element"></div>
 	</div>
 	<div class="row">
 	
 		<div class="element empty-element"></div>
-		<a href="#CoAmox" 			title="Co-amoxiclav"	class="element Penicillin"><span>AMC</span></a>
+		<a href="#CoAmoxiclav" 		id="CoAmoxiclav"				title="Co-amoxiclav"	class="element Penicillin"><span>AMC<span style="font-size:10px;"><br>Co-amoxiclav</span></span></a>
 		<div class="element empty-element"></div>
-		<a href="Temocillin" 		title="Temocillin"		class="element Gram-negativeBL"><span>TEM</span></a>
-		<a href="" 					title="2nd generation cephalosporin"	class="element Cephalosporin"><span>C 2</span></a>
-		<a href="#Vancomycin" 		title="Vancomycin"		class="element Glycopeptides"><span>VAN</span></a>
-		<a href="#Fosfomycin" 		title="Fosfomycin"		class="element Others"><span>FOS</span></a>
-		<a href="#Ciprofloxacin" 	title="Ciprofloxacin"	class="element Quinolone"><span>CIP</span></a>
-		<a href="#Metronidazole" 	title="Metronidazole"	class="element Others"><span>MET</span></a>
-		<a href="#Co-trimoxazole" 	title="Co-trimoxazole"	class="element FolicAcid"><span>TRS</span></a>
-		<a href="#Tetracycline" 	title="Tetracycline" 	class="element Tetracyclines"><span>TET</span></a>
-		<a href="#Erythromycin" 	title="Erythromycin"	class="element Macrolides"><span>ERY</span></a>
-		<a href="#Rifampicin" 		title="Rifampicin"		class="element Others"><span>RIF</span></a>
-		<a href="#Amikacin" 		title="Amikacin"		class="element Aminoglycosides" title="Amikacin"><span>AMI</span></a>
+		<a href="Temocillin" 		id="Temocillin"			title="Temocillin"		class="element Gram-negativeBL"><span>TEM<span style="font-size:10px;"><br>Temocillin</span></span></a>
+		<a href="" 					id="Ceph2"				title="2nd generation cephalosporin"	class="element Cephalosporin"><span style="font-size:10px;line-height:1.1;">2nd Generation Cephalosporins</span></a>
+		<a href="#Vancomycin" 		id="Vancomycin"			title="Vancomycin"		class="element Glycopeptides"><span>VAN<span style="font-size:10px;"><br>Vancomycin</span></span></a>
+		<a href="#Fosfomycin" 		id="Fosfomycin"			title="Fosfomycin"		class="element Others"><span style="color:white;">FOS<span style="font-size:10px;"><br>Fosfomycin</span></span></a>
+		<a href="#Ciprofloxacin" 	id="Ciprofloxacin"		title="Ciprofloxacin"	class="element Quinolone"><span>CIP<span style="font-size:10px;"><br>Ciprofloxacin</span></span></a>
+		<a href="#Metronidazole" 	id="Metronidazole"		title="Metronidazole"	class="element Others"><span style="color:purple;">MET<span style="font-size:10px;"><br>Metronidazole</span></span></a>
+		<a href="#Co-trimoxazole" 	id="Co-trimoxazole"		title="Co-trimoxazole"	class="element FolicAcid"><span style="color:brown;">TRS<span style="font-size:10px;"><br>Co-trimoxazole</span></span></a>
+		<a href="#Tetracycline" 	id="Tetracycline"		title="Tetracycline" 	class="element Tetracyclines"><span>TET<span style="font-size:10px;"><br>Tetracycline</span></span></a>
+		<a href="#Erythromycin" 	id="Erythromycin" 		title="Erythromycin"	class="element Macrolides"><span>ERY<span style="font-size:10px;"><br>Erythromycin</span></span></a>
+		<a href="#Rifampicin" 		id="Rifampicin"			title="Rifampicin"		class="element Others"><span>RIF<span style="font-size:10px;"><br>Rifampicin</span></span></a>
+		<a href="#Amikacin" 		id="Amikacin"			title="Amikacin"		class="element Aminoglycosides" title="Amikacin"><span>AMI<span style="font-size:10px;"><br>Amikacin</span></span></a>
 		<div class="element empty-element"></div>
 		</div>
 	<div class="row">
 		<div class="element empty-element"></div>
-		<a href="#PipTaz" 			title="Piperacillin with Tazobactam"	class="element Penicillin"><span>PIT</span></a>
+		<a href="#PipTaz" 			id="PipTaz"title="Piperacillin with Tazobactam"	class="element Penicillin"><span style="line-height:0.7;">PIT<span style="font-size:10px;line-height:0.6;"><br>Piperacillin/<br>Tazobactam</span></span></a>
 		<div class="element empty-element"></div>
-		<a href="#Aztreonam" 		title="Aztreonam"	class="element Gram-negativeBL"><span>AZT</span></a>
-		<a href="" 					title="3rd generation cephalosporin"	class="element Cephalosporin"><span>C 3</span></a>
-		<a href="#Teicoplanin" 		title="Teicoplanin"	class="element Glycopeptides"><span>TEI</span></a>
-		<a href="#Daptomycin" 		title="Daptomycin"	class="element Others"><span>DAP</span></a>
-		<a href="#Levofloxacin" 	title="Levofloxacin" class="element Quinolone"><span>LEV</span></a>
+		<a href="#Aztreonam" 		id="Aztreonam"		title="Aztreonam"	class="element Gram-negativeBL"><span>AZT<span style="font-size:10px;"><br>Aztreonam</span></span></a>
+		<a href="" 					id="Ceph3"			title="3rd generation cephalosporin"	class="element Cephalosporin"><span style="font-size:10px;line-height:1.1;">3rd Generation Cephalosporins</span></a>
+		<a href="#Teicoplanin" 		id="Teicoplanin"	title="Teicoplanin"	class="element Glycopeptides"><span>TEI<span style="font-size:10px;"><br>Teicoplanin</span></span></a>
+		<a href="#Daptomycin" 		id="Daptomycin"		title="Daptomycin"	class="element Others"><span style="color:grey;">DAP<span style="font-size:10px;color:grey;"><br>Daptomycin</span></span></a>
+		<a href="#Levofloxacin" 	id="Levofloxacin"	title="Levofloxacin" class="element Quinolone"><span>LEV<span style="font-size:10px;"><br>Levofloxacin</span></span></a>
 				<div class="element empty-element"></div>
 				<div class="element empty-element"></div>
-		<a href="#Oxytetracycline" 	title="Oxytetracycline"	class="element Tetracyclines"><span>OXY</span></a>
-		<a href="#Clindamycin" 		title="Clindamycin"	class="element Macrolides"><span>CLI</span></a>
-		<a href="#Linezolid" 		title="Linezolid and Tedizolid"	class="element Others"><span>LIN</span></a>
+		<a href="#Oxytetracycline" 	id="Oxytetracycline"	title="Oxytetracycline"	class="element Tetracyclines"><span>OXY<span style="font-size:10px;"><br>Oxytetracycline</span></span></a>
+		<a href="#Clindamycin" 		id="Clindamycin"	title="Clindamycin"	class="element Macrolides"><span>CLI<span style="font-size:10px;"><br>Clindamycin</span></span></a>
+		<a href="#Linezolid" 		id="Linezolid"		title="Linezolid and Tedizolid"	class="element Others"><span>LIN<span style="font-size:10px;"><br>Linezolid</span></span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 
 		</div>
 	<div class="row">
 		<div class="element empty-element"></div>
-		<a href="#Meropenem" 	title="Meropenem"	class="element Carbapenems"><span>MER</span></a>
-		<a href="#Ertapenem" 	title="Ertapenem"	class="element Carbapenems"><span>ERT</span></a>
-		<a href="#Imipenem" 	title="Imipenem with Cilastin" class="element Carbapenems"><span>IMI</span></a>
-		<a href="" 				title="5th generation Cephalosporin" 	class="element Cephalosporin"><span>C 5</span></a>
-		<a href="#Dalbavancin" 	title="Dalbavancin"	class="element Glycopeptides"><span>DAL</span></a>
-		<a href="#Colistin" 	title="Colistin"	class="element Others"><span>COL</span></a>
-		<a href="#Ofloxacin" 	title="Ofloxacin"	class="element Quinolone"><span>OFL</span></a>
+		<a href="#Meropenem" 	id="Meropenem"		title="Meropenem"	class="element Carbapenems"><span>MER<span style="font-size:10px;"><br>Meropenem</span></span></a>
+		<a href="#Ertapenem" 	id="Ertapenem"		title="Ertapenem"	class="element Carbapenems"><span>ERT<span style="font-size:10px;"><br>Ertapenem</span></span></a>
+		<a href="#Imipenem" 	id="Imipenem"		title="Imipenem with Cilastin" class="element Carbapenems"><span>IMI<span style="font-size:10px;"><br>Imipenem</span></span></a>
+		<a href="" 				id="Ceph5"			title="5th generation Cephalosporin" 	class="element Cephalosporin"><span style="font-size:10px;line-height:1.1;">5th Generation Cephalosporins</span></a>
+		<a href="#Dalbavancin" 	id="Dalbavancin"	title="Dalbavancin"	class="element Glycopeptides"><span>DAL<span style="font-size:10px;"><br>Dalbavancin</span></span></a>
+		<a href="#Colistin" 	id="Colistin"		title="Colistin"	class="element Others"><span style="color:grey;">COL<span style="font-size:10px;color:grey;"><br>Colistin</span></span></a>
+		<a href="#Ofloxacin" 	id="Ofloxacin"		title="Ofloxacin"	class="element Quinolone"><span>OFL<span style="font-size:10px;"><br>Ofloxacin</span></span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
-		<a href="#Minocycline" 	title="Minocycline"		class="element Tetracyclines"><span>MIN</span></a>
-		<a href="#Azithromycin" title="Azithromycin"	class="element Macrolides"><span>AZI</span></a>
-		<a href="#Chloramphenicol" title="Chloramphenicol"	class="element Others"><span>CHL</span></a>
+		<a href="#Minocycline" 	id="Minocycline"	title="Minocycline"		class="element Tetracyclines"><span style="font-size:95%;line-height:0.6;">MIN<span style="font-size:10px;"><br>Minocycline/ Lymecycline</span></span></a>
+		<a href="#Azithromycin" id="Azithromycin"	title="Azithromycin"	class="element Macrolides"><span>AZI<span style="font-size:10px;"><br>Azithromycin</span></span></a>
+		<a href="#Chloramphenicol" 
+id="Chloramphenicol"	title="Chloramphenicol"	class="element Others"><span>CHL<span style="font-size:10px;"><br>Chloramphenicol</span></span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 	</div>
 	<div class="row">
 		<div class="element empty-element"></div>
-		<a href="#MER-AVI" 	title="Meropenem and Avibactam"	class="element Carbapenems"><span>MER+AVI</span></a>
-				<div class="element empty-element"></div>
-				<div class="element empty-element"></div>
-		<a href="" title="Cephalosporin with Enzyme Inhibitor, see bottom right" class="element Cephalosporin"><span>C + EI</span></a>
-		<a href="#Telavancin" 	title="Telavancin"	class="element Glycopeptides"><span>TEL</span></a>
-				<div class="element empty-element"></div>
-
-		<a href="#Moxifloxacin" title="Moxifloxacin"	class="element Quinolone"><span>MOX</span></a>
-						<div class="element empty-element"></div>
-				<div class="element empty-element"></div>
-
-		<a href="#Tigecycline" title="Tigecycline"	class="element Tetracyclines"><span>TIG</span></a>
-						<div class="element empty-element"></div>
-				<div class="element empty-element"></div>
-		<a href="#TB" 		title="TB and leprosy drugs"	class="element Others"><span>TB/L</span></a>
+		<a href="#MER-AVI" 	id="MER-AVI"		title="Meropenem and Vaborbactam"	class="element Carbapenems"><span style="font-size:75%;color:white;line-height:0.8;">MER + VAB<span style="font-size:10px;"><br>Meropenem/<BR>Vaborbactam</span></span></a>
 		
+		<div class="element empty-element"></div>
+		<div class="element empty-element"></div>
+		
+		<a href="" 				id="CephEI"			title="Cephalosporin with Enzyme Inhibitor, see bottom right" class="element Cephalosporin"><span style="font-size:10px;line-height:1.1;">Cephalosporins with Enzyme Inhibitors</span></a>
+		<a href="#Telavancin" 	id="Telavancin"		title="Telavancin"	class="element Glycopeptides"><span>TEL<span style="font-size:10px;"><br>Telavancin</span></span></a>
+				<div class="element empty-element"></div>
+
+		<a href="#Moxifloxacin" id="Moxifloxacin"	title="Moxifloxacin"	class="element Quinolone"><span>MOX<span style="font-size:10px;"><br>Moxifloxacin</span></span></a>
+						<div class="element empty-element"></div>
+				<div class="element empty-element"></div>
+
+		<a href="#Tigecycline" id="Tigecycline"		title="Tigecycline"	class="element Tetracyclines"><span>TIG<span style="font-size:10px;"><br>Tigecycline</span></span></a>
+						<div class="element empty-element"></div>
+				<div class="element empty-element"></div>		
+				<div class="element empty-element"></div>
+<!--		<a href="#TB" 		id="Tuberculosis"		title="TB and leprosy drugs"	style="background-color:white;" class="element Others"><span style="font-size:10px;color:grey;">Tuberculosis and Leprosy Specialist Antibiotics</span></span></a>
+	-->	
 				<div class="element empty-element"></div>
 	</div>
 	<div class="row">
@@ -480,44 +540,43 @@ h1 {
 </div>
 <div class="f-block elements">
 	<div class="row">
-	  <a href="#CephGen" class="element Cephalosporin"><span>1st Gen  Cephalosporin</span></a>
-	  <a href="#CEF" 	title="Cefradine"	class="element Cephalosporin"><span>CEF</span></a>
-	  <a href="#shadow" 	title="Cefalexin"	class="element Cephalosporin"><span>CLE</span></a>
-	  <a href="#template" 	tilte="Cefazolin"	class="element Cephalosporin"><span>CZO</span></a>
-  	  <a href="#template" 	title="Cefadroxil"	class="element Cephalosporin"><span>CDR</span></a>
+	  <a href="#CephGen" 	id="Cef1"			class="element Cephalosporin"><span style="font-size:12px;line-height:1.1; ">1st Generation Cephalosporins</span></a>
+	  <a href="#CEF" 		id="Cefradine"		title="Cefradine"	class="element Cephalosporin"><span>CEF<span style="font-size:10px;"><br>Cefradine</span></span></a>
+	  <a href="#shadow" 	id="Cefalexin"		title="Cefalexin"	class="element Cephalosporin"><span>CLE<span style="font-size:10px;"><br>Cefalexin</span></span></a>
+	  <a href="#template" 	id="Cefazolin"
+title="Cefazolin"	class="element Cephalosporin"><span>CZO<span style="font-size:10px;"><br>Cefazolin</span></span></a>
+  	  <a href="#template" 	id="Cefadroxil"		title="Cefadroxil"	class="element Cephalosporin"><span>CDR<span style="font-size:10px;"><br>Cefadroxil</span></span></a>
+		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		
-	</div>
-	<div class="row">
-	  <a href="#CephGen" class="element Cephalosporin"><span>2nd Gen  Cephalosporin</span></a>
-	  <a href="#element" 	title="Cefuroxime"	class="element Cephalosporin"><span>CUR</span></a>
-	  <a href="#shadow" 	title="Cefaclor"	class="element Cephalosporin"><span>CCL</span></a>
-	  <a href="#template" 	title="Cefoxitin" 	class="element Cephalosporin"><span>CXI</span></a>
+	  <a href="#CephGen" 	id="Cef2"			class="element Cephalosporin"><span style="font-size:12px;line-height:1.1; ">2nd Generation  Cephalosporins</span></a>
+	  <a href="#element" 	id="Cefuroxime"		title="Cefuroxime"	class="element Cephalosporin"><span>CUR<span style="font-size:10px;"><br>Cefuroxime</span></span></a>
+	  <a href="#shadow" 	id="Cefaclor"		title="Cefaclor"	class="element Cephalosporin"><span>CCL<span style="font-size:10px;"><br>Cefaclor</span></span></a>
+	  <a href="#template" 	id="Cefoxitin"		title="Cefoxitin" 	class="element Cephalosporin"><span>CXI<span style="font-size:10px;"><br>Cefoxitin</span></span></a>
   		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 
 		</div>
 		<div class="row">
-	  <a href="#CephGen" class="element Cephalosporin"><span>3rd Gen  Cephalosporin</span></a>
-	  <a href="#Cefotaxime" 	title="Cefotaxime"		class="element Cephalosporin"><span>CTA</span></a>
-	  <a href="#Ceftazidime" 	title="Ceftazidime"		class="element Cephalosporin"><span>CTZ</span></a>
-	  <a href="#Cefixime" 		title="Cefixime"		class="element Cephalosporin"><span>CIX</span></a>
-  	  <a href="#Ceftriaxone" 	title="Ceftriaxone"		class="element Cephalosporin"><span>CTR</span></a>
+	  <a href="#CephGen" 		id="Cef3"			class="element Cephalosporin"><span style="font-size:12px;line-height:1.1; ">3rd Generation Cephalosporins</span></a>
+	  <a href="#Cefotaxime" 	id="Cefotaxime"		title="Cefotaxime"		class="element Cephalosporin"><span>CTA<span style="font-size:10px;"><br>Cefotaxime</span></span></a>
+	  <a href="#Ceftazidime" 	id="Ceftazidime"		title="Ceftazidime"		class="element Cephalosporin"><span>CTZ<span style="font-size:10px;"><br>Ceftazidime</span></span></a>
+	  <a href="#Cefixime" 		id="Cefixime"			title="Cefixime"		class="element Cephalosporin"><span>CIX<span style="font-size:10px;"><br>Cefixime</span></span></a>
+  	  <a href="#Ceftriaxone" 	id="Ceftriaxone"		title="Ceftriaxone"		class="element Cephalosporin"><span>CTR<span style="font-size:10px;"		 ><br>Ceftriaxone</span></span></a>
 		<div class="element empty-element"></div>
- 	</div>
-	<div class="row">
-	  <a href="#CephGen" class="element Cephalosporin"><span>5th Gen Cephalosporin</span></a>
-	  <a href="#Ceftaroline" 		title="Ceftaroline"		class="element Cephalosporin"><span>CTL</span></a>
-	  <a href="#Ceftobiprole" 		title="Ceftobiprole"	class="element Cephalosporin"><span>CTO</span></a>
-	  <a href="#Cefepime" 			title="Cefepime"		class="element Cephalosporin"><span>CEP</span></a>
+ 	<div class="element empty-element"></div>
+	  <a href="#CephGen" 		id="Cef5"	class="element Cephalosporin"><span style="font-size:12px;line-height:1.1; ">5th Generation Cephalosporins</span></a>
+	  <a href="#Ceftaroline" 	id="Ceftaroline"		title="Ceftaroline"		class="element Cephalosporin"><span>CTL<span style="font-size:10px;" 	><br>Ceftaroline</span></span></a>
+	  <a href="#Ceftobiprole" 	id="Ceftobiprole"		title="Ceftobiprole"	class="element Cephalosporin"><span>CTO<span style="font-size:10px;"	><br>Ceftobiprole</span></span></a>
+	  <a href="#Cefepime" 		id="Cefepime"			title="Cefepime"		class="element Cephalosporin"><span>CEP<span style="font-size:10px;"	><br>Cefepime</span></span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 	
 		</div>
 				<div class="row">
-	  <a href="#CephGen" class="element Cephalosporin"><span>Cephalosporin + Inhibitor</span></a>
-	  <a href="#Ceftazidime-avibactam" title="Ceftazidime-avibactam" 	class="element Cephalosporin"><span>CTV</span></a>
-	  <a href="#Ceftolozane-tazobactam" title="Ceftolozane-tazobactam"	class="element Cephalosporin"><span>CTT</span></a>
+	  <a href="#CephGen" id="CefEI"	class="element Cephalosporin"><span style="font-size:12px;line-height:1.1; ">Cephalosporins with Enzyme Inhibitor</span></a>
+	  <a href="#Ceftazidime-avibactam" 	id="Ceftazidime-avibactam"		title="Ceftazidime-avibactam" 	class="element Cephalosporin"><span style="line-height:0.5;" >CTV<span style="font-size:10px;"><br>Ceftazidime/<br>avibactam</span></a>
+	  <a href="#Ceftolozane-tazobactam" id="Ceftolozane-tazobactam"	 	title="Ceftolozane-tazobactam"	class="element Cephalosporin"><span style="line-height:0.5;">CTT<span style="font-size:10px;"><br>Ceftolozane/<br>tazobactam</span></span></a>
 		<div class="element empty-element"></div>
 		<div class="element empty-element"></div>
 		</div>
@@ -525,6 +584,8 @@ h1 {
 				
 </div>
 <ul class="key">
+<span>Background colour gives antibiotic class</span>
+<br>
 	<li class="Penicillin">Penicillins</li>
 	<li class="Cephalosporin">Cephalosporin</li>
 	<li class="Gram-negativeBL">Gram-negative Beta-lactams</li>
@@ -536,12 +597,33 @@ h1 {
 	<li class="Tetracyclines">Tetracyclines</li>
 	<li class="Aminoglycosides">Aminoglycosides</li>
 	<li class="Others">Others</li>
+	<br/>
+	<span> Text colour indicates site of action</span>
+	<span style="color:purple;">Bacterial DNA</span>
+	<span style="color:white;">Cell Wall</span>
+	<span style="color:black;">Ribosomes</span>
+	<span style="color:brown;">Folate</span>
+	<span style="color:grey;">Cell membrane</span>
 </ul>
 
+<button onClick='Remove("Ceph1,Ceph2,Ceph3,Ceph5,CephEI,Benzylpenicillin,Gentamicin,Amoxicillin,Flucloxacillin,Pivmecillinam,Nitrofurantoin,Trimethoprim,Doxycycline,Clarithromycin,Fusidic,Tobramycin,CoAmoxiclav,Temocillin,Vancomycin,Fosfomycin,Ciprofloxacin,Metronidazole,Co-trimoxazole,Tetracycline,Erythromycin,Rifampicin,Amikacin,PipTaz,Aztreonam,Teicoplanin,Daptomycin,Levofloxacin,Oxytetracycline,Clindamycin,Linezolid,Meropenem,Ertapenem,Imipenem,Dalbavancin,Colistin,Ofloxacin,Minocycline,Azithromycin,Chloramphenicol,MER-AVI,Telavancin,Moxifloxacin,Tigecycline,Cef1,Cef2,Cef3,Cef5,CefEI,Cefradine,Cefalexin,Cefazolin,Cefadroxil,Cefuroxime,Cefaclor,Cefoxitin,Cefotaxime,Ceftazidime,Cefixime,Ceftriaxone,Ceftaroline,Ceftobiprole,Cefepime,Ceftazidime-avibactam,Ceftolozane-tazobactam");'>Hide All</button>
 
+<button onClick='Remove("Ceph5,CephEI,Fusidic,Tobramycin,Temocillin,Rifampicin,Amikacin,Oxytetracycline,Imipenem,Dalbavancin,Colistin,	Minocycline,Azithromycin,Chloramphenicol,MER-AVI,Telavancin,Moxifloxacin,Tigecycline,Cef5,CefEI,Cefradine,Cefazolin,Cefadroxil,Cefaclor,Cefoxitin,Cefixime,Ceftaroline,Ceftobiprole,Cefepime,Ceftazidime-avibactam,Ceftolozane-tazobactam");'>Common antibiotics</button>
+
+
+
+
+<button onClick='document.getElementById("title").innerHTML ="UK antibiotics acting on anaerobes";Remove("Ceph1,Ceph2,Ceph3,Ceph5,CephEI,Benzylpenicillin,Gentamicin,Amoxicillin,Flucloxacillin,Pivmecillinam,Nitrofurantoin,Trimethoprim,Doxycycline,Clarithromycin,Fusidic,Tobramycin,Temocillin,Vancomycin,Fosfomycin,Ciprofloxacin,Co-trimoxazole,Tetracycline,Erythromycin,Rifampicin,Amikacin,Aztreonam,Teicoplanin,Daptomycin,Levofloxacin,Oxytetracycline,Linezolid,Dalbavancin,Ofloxacin,Minocycline,Azithromycin,Chloramphenicol,Telavancin,Moxifloxacin,Tigecycline,Cef1,Cef2,Cef3,Cef5,CefEI,Cefradine,Cefalexin,Cefazolin,Cefadroxil,Cefuroxime,Cefaclor,Cefoxitin,Cefotaxime,Ceftazidime,Cefixime,Ceftriaxone,Ceftaroline,Ceftobiprole,Cefepime,Ceftazidime-avibactam,Ceftolozane-tazobactam");'>Show only those active against anaerobic bacteria</button>
+<button onClick='document.getElementById("title").innerHTML ="UK antibiotics for normal chest infections";Remove("Flucloxacillin,Dalbavancin,Azithromycin,Vancomycin,Teicoplanin,Tetracycline,Oxytetracycline,Minocycline,Clindamycin,Gentamicin,Pivmecillinam,Nitrofurantoin,Trimethoprim,Tobramycin,Temocillin,Fosfomycin,Ciprofloxacin,Co-trimoxazole,Amikacin,Aztreonam,Ofloxacin,MER-AVI,Telavancin,Cefazolin,Cefadroxil,Cefuroxime,Cefoxitin,Cefixime,Cefepime");'>For Chest Infections</button>
+
+<button onClick='var x = document.getElementsByClassName("element");
+var i;
+for (i = 0; i < x.length; i++) {
+  x[i].style.visibility = "visible";}'>Show all</button>
+<!--
 <div class="descriptions">
 		  <div class="description Penicillin" id="BEN">
-				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
+				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V</a></h2>
 				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
 			</div>
 			
@@ -551,234 +633,234 @@ h1 {
 			</div>
 
 		  <div class="description Penicillin" id="Amoxicillin">
-				<h2><a href="https://www.bnf.org/">Amoxicillin/Ampicillin;</a></h2>
+				<h2><a href="https://www.bnf.org/">Amoxicillin/Ampicillin</a></h2>
 				<p>Amoxicillin and ampicillin have the same spectrum, but amoxicillin is better tolerated.</p>
 			</div>
 
 		  <div class="description Penicillin" id="Flucloxacillin">
-				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<h2><a href="https://www.bnf.org/">Flucloxacillin</a></h2>
+				<p>Lipsum.</p>
 			</div>
 
 		  <div class="description Penicillin" id="Pivmecillinam">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 
 		  <div class="description Penicillin" id="Nitrofurantoin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 
 		  <div class="description Penicillin" id="Trimethoprim">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Doxycycline">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 
 		  <div class="description Penicillin" id="Clarithromycin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 
 		  <div class="description Penicillin" id="Fusidic">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Tobramycin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
-		  <div class="description Penicillin" id="CoAmox">
+		  <div class="description Penicillin" id="CoAmoxiclav">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Temocillin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Vancomycin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Fosfomycin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Ciprofloxacin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Metronidazole">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Co-trimoxazole">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Tetracycline">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Erythromycin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Rifampicin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Amikacin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="PipTaz">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Aztreonam">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Teicoplanin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Daptomycin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Levofloxacin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Oxytetracycline">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Clindamycin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Linezolid">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Meropenem">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Ertapenem">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Imipenem">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Dalbavancin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Colistin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Ofloxacin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Minocycline">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Azithromycin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Chloramphenicol">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="MER-AVI">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Telavancin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Moxifloxacin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Tigecycline">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
-		  <div class="description Penicillin" id="TB">
+		  <div class="description Penicillin" id="TBa">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="CEF">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Cefalexin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Cefazolin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Cefadroxil">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Cefuroxime">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Cefaclor">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Cefoxitin">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Cefotaxime">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Ceftazidime">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Cefixime">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Ceftriaxone">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Ceftaroline">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Ceftobiprole">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Cefepime">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="CephGen">
 				<h2><a href="https://www.bnf.org/"Generations of Cephalosporins</a></h2>
@@ -786,20 +868,20 @@ h1 {
 			</div>
 		  <div class="description Penicillin" id="Ceftazidime-avibactam">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 		  <div class="description Penicillin" id="Ceftolozane-tazobactam">
 				<h2><a href="https://www.bnf.org/">Benzylpenicillin/Penicillin V;</a></h2>
-				<p>Benzylpenicillin and it's oral equivalent penicllin V or phenoxymethylpenicillin.</p>
+				<p>Lipsum.</p>
 			</div>
 	
 
+-->
 
-<button onClick='document.getElementById("elementBEN").className = "element remove";'>Show only those active against anaerobic bacteria</button>
 </div>
 	
 		</main>
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -818,12 +900,11 @@ h1 {
 		});
 
 		</script>
+		-->
 	</body>
 </html>
 
 <!--
-BEN
-Gentamicin
 Amoxicillin
 Flucloxacillin
 Pivmecillinam
@@ -833,7 +914,7 @@ Doxycycline
 Clarithromycin
 Fusidic
 Tobramycin
-CoAmox
+CoAmoxiclav
 Temocillin
 Vancomycin
 Fosfomycin
@@ -883,5 +964,19 @@ Cefepime
 CephGen
 Ceftazidime-avibactam
 Ceftolozane-tazobactam
+
+
+
+
 -->
+
+
+
+
+
+
+
+
+
+
 
