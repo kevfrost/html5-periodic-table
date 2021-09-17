@@ -40,7 +40,7 @@
 
 "Daptomycin","Linezolid","Tigecycline",
 
-"Meropenem","Ertapenem","Imipenem",
+"Meropenem","Ertapenem","Imipenem","Fidaxomicin",
 
 
 "Colistin","Chloramphenicol","MER-AVI","Dalbavancin","Telavancin","Ceph5","Cef5","Ceftaroline","Ceftobiprole","Cefepime","CephEI","CefEI","Ceftazidime-avibactam","Ceftolozane-tazobactam"
@@ -74,9 +74,9 @@
 		
 		
 		<style>html {
-  background: #787878;
+  background: #500000;
   /* Old browsers */
-  background: radial-gradient(ellipse at center, #454545 0%, #787878 100%);
+  background: radial-gradient(ellipse at center, #500000 0%, #787878 100%);
   background-size: cover;
   height: 100%;
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -405,7 +405,9 @@ line-height:.9em;  }
 	</head>
 	<body>
 		<main>
-			<h1 id="title" onClick="Reveal();">UK Antibiotics</h1>
+			<h1 id="title" onClick="Reveal();">Antibiotics licenced in the UK</h1>
+			<h4 style="text-align:center;color:white;">Antibiotics are arranged by pharmacological class (left to right) and normal preference (top = normally preferred, bottom = normally last-line).<br>
+			One box is shown where there are two very similar drugs in pharmacodynamic terms, where the one that is normally used is shown first.  There may be siginficant pharmacokinetic differences between them.</h4>
 			
 			<div class="elements">
 	<!-- TITILE ROW-->
@@ -413,7 +415,7 @@ line-height:.9em;  }
 		
 		<div class="element empty-element"></div>
 		
-			<a id="Benzylpenicillin" class="element Penicillin" style="height:70%"><span style="font-size:10px;"><br>Penicillins</span></span></a>
+			<a id="Benzylpenicillin" class="element Penicillin" style="height:70%"><span style="font-size:10px;"><br>Penicillins</span></a>
 			<a id="Benzylpenicillin" class="element Carbapenems" style="height:70%"><span style="font-size:10px;"><br>Carbapenems</span></span></a>
 			<a id="Benzylpenicillin" class="element Gram-negativeBL" style="height:70%"><span style="font-size:10px;"><br>Gram-neg only<br>Beta-Lactams</span></span></a>
 			<a id="Benzylpenicillin" class="element Cephalosporin" style="height:70%"><span style="font-size:10px;"><br>Cephalosporins</span></span></a>
@@ -422,8 +424,8 @@ line-height:.9em;  }
 			<a id="Benzylpenicillin" class="element Quinolone" style="height:70%"><span style="font-size:10px;"><br>Quinolone</span></span></a>
 			<a id="Benzylpenicillin" class="element Others" style="height:70%"><span style="font-size:10px;"><br>Other DNA</span></span></a>
 			<a id="Benzylpenicillin" class="element FolicAcid" style="height:70%"><span style="font-size:10px;"><br>Folate</span></span></a>
-			<a id="Benzylpenicillin" class="element Tetracyclines" style="height:70%"><span style="font-size:10px;"><br>Tetracyclines</span></span></a>
-			<a id="Benzylpenicillin" class="element Macrolides" style="height:70%"><span style="font-size:10px;"><br>Macrolides</span></span></a>
+			<a id="Benzylpenicillin" class="element Tetracyclines" style="height:70%"><span style="font-size:10px;"><br>Tetracyclines<br>and related</span></span></a>
+			<a id="Benzylpenicillin" class="element Macrolides" style="height:70%"><span style="font-size:10px;"><br>Macrolides<br>and related</span></span></a>
 			<a id="Benzylpenicillin" class="element Others" style="height:70%"><span style="font-size:10px;"><br>Other ribosomals</span></span></a>
 			<a id="Benzylpenicillin" class="element Aminoglycosides" style="height:70%"><span style="font-size:10px;"><br>Aminoglycosides</span></span></a>
 		<div class="element empty-element"></div>
@@ -482,7 +484,7 @@ line-height:.9em;  }
 		<a href="#Vancomycin" 		id="Vancomycin"			title="Vancomycin"		class="element Glycopeptides"><span>VAN<span style="font-size:10px;"><br>Vancomycin</span></span></a>
 		<a href="#Fosfomycin" 		id="Fosfomycin"			title="Fosfomycin"		class="element Others"><span style="">FOS<span style="font-size:10px;"><br>Fosfomycin</span></span></a>
 		<a href="#Ciprofloxacin" 	id="Ciprofloxacin"		title="Ciprofloxacin"	class="element Quinolone"><span>CIP<span style="font-size:10px;"><br>Ciprofloxacin</span></span></a>
-		<a href="#Metronidazole" 	id="Metronidazole"		title="Metronidazole"	class="element Others"><span style="">MET<span style="font-size:10px;"><br>Metronidazole</span></span></a>
+		<a href="#Metronidazole" 	id="Metronidazole"		title="Metronidazole"	class="element Others"><span style="line-height:0.8;">MET<span style="font-size:10px;line-height:0.8;"><br>Metronidazole<br>or Tinidazole</span></span></a>
 		<a href="#Co-trimoxazole" 	id="Co-trimoxazole"		title="Co-trimoxazole"	class="element FolicAcid"><span style="">TRS<span style="font-size:10px;"><br>Co-trimoxazole</span></span></a>
 		<a href="#Tetracycline" 	id="Tetracycline"		title="Tetracycline" 	class="element Tetracyclines"><span>TET<span style="font-size:10px;"><br>Tetracycline</span></span></a>
 		<a href="#Erythromycin" 	id="Erythromycin" 		title="Erythromycin"	class="element Macrolides"><span>ERY<span style="font-size:10px;"><br>Erythromycin</span></span></a>
@@ -543,7 +545,7 @@ id="Chloramphenicol"	title="Chloramphenicol"	class="element Others"><span>CHL<sp
 				<div class="element empty-element"></div>
 
 		<a href="#Tigecycline" id="Tigecycline"		title="Tigecycline"	class="element Tetracyclines"><span>TIG<span style="font-size:10px;"><br>Tigecycline</span></span></a>
-						<div class="element empty-element"></div>
+		<a href="#Fidaxomicin" id="Fidaxomicin"	title="Fidaxomicin"	class="element Macrolides"><span>FDX<span style="font-size:10px;"><br>Fidaxomicin</span></span></a>
 				<div class="element empty-element"></div>		
 				<div class="element empty-element"></div>
 <!--		<a href="#TB" 		id="Tuberculosis"		title="TB and leprosy drugs"	style="background-" class="element Others"><span style="font-size:10px;">Tuberculosis and Leprosy Specialist Antibiotics</span></span></a>
